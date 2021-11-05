@@ -214,6 +214,20 @@ what is x
 
 
 
+### 접기
+```md
+<details><summary>CLICK ME</summary>
+
+pythonprint("hello world!")
+
+</details>
+```
+
+<details>
+<summary>CLICK ME</summary>
+pythonprint("hello world!")
+</details>
+
 ----
 
 * [목록으로 돌아가기](../README.md)
