@@ -5,7 +5,10 @@
 
 # 목차
 
+* [Javascript 강의 따라하기](document/Javascript/강의따라하기/README.md)
+* [Javascript 만들기](document/Javascript/만들기/README.md)
+
+
 * [웹팩](document/Webpack/README.md)
 * [리액트](document/React/README.md)
-* [Javascript](document/Javascript/README.md)
 * [Git](document/Git/README.md)
