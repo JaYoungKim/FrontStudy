@@ -5,8 +5,8 @@
 
 # 목차
 
-* [Javascript 강의 따라하기](document/Javascript/toFollow/README.md)
-* [Javascript 만들기](document/Javascript/make/README.md)
+* [Javascript 강의 따라하기](document/javascript/toFollow/README.md)
+* [Javascript 만들기](document/javascript/make/README.md)
 
 
 * [웹팩](document/Webpack/README.md)
