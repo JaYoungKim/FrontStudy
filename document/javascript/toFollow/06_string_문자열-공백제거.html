@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 공백 제거</title>
+</head>
+<body>
+  
+  <script>
+
+    var str1 = "  문자열의 앞 뒤 공백 제거하기     ";
+    
+    // String.trim();
+    console.log(str1)
+    console.log(str1.trim());
+    // String.replace() 와 정규식 사용;
+
+   /*
+      \ : \ 다음 문자가 특수문자가 아닐 때 -> 해당 문자는 특별하고 문자 그대로 해석되면 안된다. 
+          \ 다음 문자가 특수문자 일 때 -> 해당 문자는 특별하지 않고 문자 그대로 해석해야 한다.  
+      ^ : 입력의 시작부에 대응된다
+      \s : space 공백
+      * : 없거나 있거나 (없음 || 있음): 여러개 포함
+      + : 최소 한개(한개 || 여러개) == {1,}
+      | : OR 둘중 하나라도 해당되거나 둘 다
+      $ : 입력의 끝부분과 대응된다.
+      g: 모든 문자 검색
+      m: 여러행의 문자열에 대해 검색 
+      (): 그룹 검색 및 분류
+   */
+
+    /*
+      /^\s+|\s+$/gm : 앞 뒤 공백 제거 
+
+      ^\s : 시작부의 공백을
+      + : 하나 이상 
+      | : 찾거나
+      \s+ : 공백을 하나이상 
+      $ : 끝부분에서 
+      /gm: 모두 찾는다  
+    */
+    console.log(str1.replace(/^\s+|\s+$/gm, ''));
+    /* 
+      /(\s)/g
+    
+    */
+    console.log(str1.replace(/\s/g,''))
+    console.log(str1.replace(/^\s+/g,''));
+    console.log(str1.replace(/\s+$/g,''));
+  </script>
+</body>
+</html>

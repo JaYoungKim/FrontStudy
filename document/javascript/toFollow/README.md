@@ -183,7 +183,7 @@
 * [Javascript] [숫자 3자리(천단위) 마다 콤마 찍는 2가지 방법  ](https://hianna.tistory.com/441?category=764998)
 
 
-Table
+## Table
 * [HTML] [기본 테이블(표, Table) 그리기 (table, tr, td, th)](https://hianna.tistory.com/281)
 * [HTML] [테이블 제목 지정하기, caption tag ](https://hianna.tistory.com/282?category=706939)
 * [HTML] [테이블(table) 가로, 세로 셀 병합하기 (colspan, rowspan)](https://hianna.tistory.com/442)
