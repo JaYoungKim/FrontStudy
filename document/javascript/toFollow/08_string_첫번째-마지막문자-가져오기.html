@@ -11,18 +11,35 @@
   <script>
     const str = "안녕하세요";
     //첫번째 글자의 인덱스 번호는 기본적으로 0부터 시작한다. 
-    // String.charAt()
+    console.log(str.length);    //문자열의 전체 갯수 5
 
+    // String.charAt(index)
+    console.log(str.charAt(0)); // 안
+    console.log(str.charAt(str.length-1)); //요
 
-    // String.substr(start, length)
-
+    // String.substr(start, length);
+    // start index 부터 length 길이만큼을 잘라내어 반환하는 함수 
+    console.log(str.substr(0,1)); //안
+    // 시작위치를 문자열의 전체 갯수-1로 지정하고 그 위치부터 글자 1개를 가져온다. 
+    console.log(str.substr(str.length-1,1)) //요
 
     // String.substring(start, end);
-    
+    // 잘라내고 싶은 문자열의 start index와 last index를 전달
+    // start와 end값을 바꾸어서 처리가능 
+    // start 값이 음수인 경우 start 값은 0으로 취급
+    console.log(str.substring(0,1)); //안
+    console.log(str.substring(str.length-1, str.length)); //요
+    //시작 번호부터 5 4 로 거꾸로도 지정 가능하네? 
+    console.log(str.substring(str.length, str.length-1)); //요
   
   
     // String.slice(start, end);
-     
+     // start와 end값을 바꾸어서 처리 할수 없는 대신 음수로 시작점을 뒤에서부터 처리가능 
+     console.log(str.slice(0,1)); //안
+     console.log(str.slice(str.length-1,str.length)); //요
+    // 음수지정시 마지막 자리부터 시작
+     console.log(str.slice(-1)); //요
+     console.log(str.slice(-3, -2)); // => (5-3, 5-2) =>(2,3) //하
   
   </script>
 </body>

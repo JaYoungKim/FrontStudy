@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열을 배열로 변환</title>
+</head>
+<body>
+  <script>
+    // String.split(separator,limit);
+    // separator로 잘라서 limit 크기 이하로 저장하여 배열로 리턴하는 함수.
+    // separator & limit는 필수 입력값이 아님.
+
+    var str = 'apple banana orange';
+
+    console.log(str.split()); //[apple, banana, orange]
+    console.log(str.split(' ')); //['apple', 'banana', 'orange']
+
+    // 글자별로 배열에 담기
+    console.log(str.split(''));
+
+    var str = 'apple, banana, orange';// ['a', 'p', 'p', 'l', 'e', ' ', 'b', 'a', 'n', 'a', 'n', 'a', ' ', 'o', 'r', 'a', 'n', 'g', 'e']
+    console.log(str.split(', ')) //['apple', 'banana', 'orange']
+
+
+    //limit 지정
+    console.log(str.split(', ',2)) //['apple', 'banana']
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>특정위치 문자찾기</title>
+</head>
+<body>
+  <script>
+    
+    
+    var str = "안녕하세요";
+    // String.charAt(index);
+
+    //아무것도 입력안할 시 0번째 index반환
+    console.log(str.charAt()); //안
+    console.log(str.charAt(0)); //안
+    console.log(str.charAt(str.length-1));//요
+    console.log(str.charAt(999)); //('') 빈 문자열 리턴 
+
+    // String[index] 대괄호 사용하기 
+    console.log(str[0]); //안
+    console.log(str[str.length-1]); // 요
+    console.log(str[999]) //undefined
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>indexOf()</title>
+</head>
+<body>
+  <script>
+    // String.indexOf(searchValue, [position]);
+    // String에서 특정 문자열(serchValue)를 찾고, 검색된 문자열이 '첫번째'로 나타나는 위치 index를 리턴한다.
+    // serchValue는 필수 입력값임. 
+    // position은 옵션. 기본값은 0, String에서 serchValue를 찾기 시작할 위치.
+    // 찾는 문자열이 없으면 -1을 리턴
+    // 대소문자를 구분한다. 
+    var str = 'aBcdecd';
+    console.log(str.indexOf('a')); //0
+    console.log(str.indexOf('b')) //-1;
+    console.log(str.indexOf('cd')) //2;
+
+
+    console.log(str.indexOf('cd')) //2
+    //첫번째 cd는 무시하고 이후 'cd' 를 검색한다. 
+    console.log(str.indexOf('cd',3)) //5
+
+    // 문자열에 있는 모든 serchValue의 위치 찾기 
+
+    var pos = 0;
+    while(true){
+      var foundPos = str.indexOf('cd',pos);
+      if(foundPos === -1) break;
+
+      console.log('cd가 있는 위치', foundPos);
+      pos += 1;
+      
+    }
+
+  </script>
+</body>
+</html>

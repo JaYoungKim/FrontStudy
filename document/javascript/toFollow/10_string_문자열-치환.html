@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 치환하기</title>
+</head>
+<body>
+  <script>
+    
+    //String.replace(serchValue, newValue);
+    var str = 'apple, banana, orange'
+    console.log(str.replace('banana','tomato')); //apple, tomato, orange
+
+    //첫번째 찾은 문자열만 치홤해준다. 
+    var str = 'apple, banana, banana, orange';
+    console.log(str.replace('banana','tomato')); //apple, tomato, banana, orange
+
+    //대소문자를 구분한다. 
+    var str = 'apple, Banana, banana, orange';
+    console.log(str.replace('banana','tomato')); //apple, Banana, tomato, orange
+
+    //대소문자 구분없이 치환하는 법 :정규식사용
+    // i = ignore case
+    var str = 'apple, Banana, banana, orange';
+    console.log(str.replace(/banana/i,'tomato')); //apple, tomato, banana, orange
+
+    //모든 문자열 치환하기 
+    // g = global match
+    var str = 'apple, banana, banana, orange';
+    console.log(str.replace(/banana/g,'tomato')); //apple, tomato, tomato, orange
+    
+    //대소문자 구분없이 모두 치환하기 
+    //순서는 상관없음. 
+    var str = 'apple, Banana, banana, orange';
+    console.log(str.replace(/banana/gi,'tomato')); //apple, tomato, tomato, orange
+  </script>
+</body>
+</html>
