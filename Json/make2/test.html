@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <section></section>
+
+  <script>
+    
+    //   motherInfo 의 변수 : 쉼표로 나뉘어진 세 어미 고양이의 이름 
+    //   kittenInfo 의 변수 : 새끼 고양이의 전체 마릿수, 수컷 수, 암컷 수 
+
+
+    // JSON 데이터는 displayCatInfo() 함수 내부에 텍스트로 제공됩니다. 데이터를 얻기 위해서는 JSON 구문을 분석해야 합니다.
+    // 아마도 outer loop를 사용해 반복하여 고양이와 그들의 이름을 motherInfo 의 변수에 추가하고, 
+    // inner loop 를 사용해 모든 새끼 고양이들, 총/수컷/암컷 마릿수를 kittenInfo 의 변수에 추가하려고 할 것입니다.
+    // 마지막에 오는 어미 고양이 이름 전에는 "and"가 와야하며, 그 뒤에 작업이 완전히 멈춰야 합니다. JSON에 고양이가 무수히 많이 오더라도 작업이 잘 이뤄질꺼라고 확신할 수 있으십니까?
+    //  para1.textContent = motherInfo; 과 para2.textContent = kittenInfo; 는 왜 displayCatInfo() 함수의 내부에 있어야 하며, 스크립트 마지막에 오지 않는 것일까요? 이것은 비동기와 관련이 있습니다.
+    const section = document.querySelector('section');
+
+      let para1 = document.createElement('p');
+      let para2 = document.createElement('p');
+
+      let motherInfo = '어미고양이의 이름은 ';
+      let kittenInfo;
+
+      fetch('sample.json')
+      .then(response => response.text())
+      .then(text => displayCatInfo(text))
+
+      function displayCatInfo(catString) {
+        let total = 0;
+        let male = 0;
+        let female = 0;
+        
+        // 여기에 코드를 작성하세요.
+        // 1) Json 파싱
+        var data = JSON.parse(catString);
+  
+        for(var i=0; i<data.length; i+=1){
+          // 2) 어미 고양이 이름을 "," 나열 마지막 어미고양이 이름 전에는 "and"로 표기 
+          if(i == 0){
+            motherInfo += data[i].name;
+          }else if(i === data.length-1){
+            motherInfo += ' and ' + data[i].name;
+          }
+          else{
+            motherInfo += ', ' + data[i].name;
+          }
+
+          // 3) 새끼고양이 전체 숫자
+          var kittens = data[i].kittens;
+          for(var j = 0; j < kittens.length; j+=1){
+            total +=1;
+            if(kittens[j].gender === "m") male += 1;
+            if(kittens[j].gender === "f") female += 1;
+          }
+        }
+
+
+        kittenInfo += "새끼 고양이 전체 숫자는 " +  total +"마리 이고 수컷은 "+ male +'마리 ' + female + '마리 입니다.'
+
+        // 다른 코드를 편집하지 마세요!
+
+        para1.textContent = motherInfo;
+        para2.textContent = kittenInfo;
+      }
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+          
+  </script>
+</body>
+</html>
