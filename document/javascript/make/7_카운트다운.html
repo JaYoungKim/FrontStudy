@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카운트다운</title>
+</head>
+<body>
+  <div class="App">
+
+  </div>
+  <script>
+    
+    // const D
+    // const toDate = new window.Date();
+    // const futureDate= new window.Date(2021,11,25,0,0,0);
+    // let diff = {};
+    // const getDateDiff = (date1, date2) => {
+    //   const newDiff = new Date(date2.getTime() - date1.getTime());
+    //     diff['year'] = newDiff.getFullYear() - 1970,
+    //     diff['month'] = newDiff.getMonth() + 1,
+    //     diff['day'] = newDiff.getDate(),
+    //     diff['hour'] = newDiff.getHours(),
+    //     diff['minute'] = newDiff.getMinutes(),
+    //     diff['second'] = newDiff.getSeconds(); 
+    // }
+    // const formatDate = (date) => {
+    //   let d = new Date(date),
+    //   year = (d.getFullYear()).toString(),
+    //   month = ('0'+(d.getMonth()+1)).slice(-2),
+    //   day = (d.getDate()).toString();
+    //   if(day.length < 2) day = '0' + day;
+
+    //   return [year, month, day].join('-');
+    // }
+
+    // const timer = setInterval(() => {
+    //   getDateDiff((new Date), futureDate);
+    //   $app.innerHTML = diff.month+'개월'+diff.day+'일 '+diff.hour+'시'+diff.minute+'분'+diff.second+'초 남았습니다.';
+    // }, 1000);
+    
+
+
+
+
+    // console.log(date.getFullYear() + '-' + ('0' +(date.getMonth()+1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2)+ ' ' + ('0'+date.getHours()).slice(-2) + ':' + ('0'+date.getMinutes()).slice(-2) +':' + ('0'+date.getSeconds()).slice(-2));
+
+    var $app = document.querySelector('.App');
+    var futureDate = new Date(2021,11,25);
+    var diff = {};
+    
+    function getDateDiff (date){
+      var newDiff = new Date(date.getTime() - new Date().getTime()); 
+      diff['year'] = newDiff.getFullYear() - 1970;
+      diff['month'] = ("0"+ newDiff.getMonth() + 1).slice(-2); 
+      diff['day'] = ("0"+ newDiff.getDate()).slice(-2);
+      diff['hour'] = ("0"+ newDiff.getHours()).slice(-2);
+      diff['minute'] = ("0"+ newDiff.getMinutes()).slice(-2);
+      diff['second'] = ("0"+ newDiff.getSeconds()).slice(-2);
+    }
+    const timer = setInterval( () => {
+      getDateDiff (futureDate);
+      $app.innerHTML = diff.year +'년'+ diff.month +'월'+ diff.day +'일'+ diff.hour +'시'+ diff.minute +'분'+ diff.second +'초 남았습니다.'
+    });
+
+</script>
+</body>
+</html>

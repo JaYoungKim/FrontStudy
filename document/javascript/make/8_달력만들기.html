@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+          *{ margin:0;padding:0;}
+      ul, li {list-style:none}
+      .calendar-head{display: flex; justify-content: center; align-items: center;}
+      .calendar-head button{width: 20px; margin: 20px;}
+      .calendar{width:calc(48px*7); margin:0 auto;}
+      .calendar li:not(.br){ float:left; width: 40px; height: 40px; padding:3px; text-align: right; border: 1px solid #ddd;}
+      .calendar-head:after,
+      .calendar li.br{display: block; overflow: hidden; clear: both; content: '';}
+      .calendar .prev, .calendar .next{color: #ddd}
+      .todate{background: rgb(139, 139, 221); color: #fff;}
+  </style>
+</head>
+<body>
+
+    <script>
+
+      var date = new Date();
+      var year= date.getFullYear();
+      var month = date.getMonth();
+      var toYear = date.getFullYear();
+      var toMonth = date.getMonth();
+      var toDate = date.getDate();
+
+
+      makeCalendar(year, month);
+      function makeCalendar(year, month){
+         var result = '', calendar = '';
+         var lastDateFull = new Date(year, month + 1, 0);
+         var lastDate = lastDateFull.getDate();
+         var lastDay = lastDateFull.getDay();
+         var prevLastDateFull = new Date(year, month, 0);
+         var prevLastDate = prevLastDateFull.getDate();
+         var prevLastDay = prevLastDateFull.getDay() + 1;
+         var prevLastSunDate = new Date(year, month-1, prevLastDate - prevLastDay).getDate() + 1;
+         var num = prevLastDay;
+      
+         result += `<div class="calendar-head"><button class="prev-month"><</button><h1>${year}년${month+1}월</h1><button class="next-month">></button></div>`;
+         result += `<ul class="calendar">`;
+         for(var i=1; i<=lastDate; i+=1){
+            // 전달 빈칸출력
+            if(i === 1 && prevLastDay !== 7){
+               for(var prev=0; prev < prevLastDay; prev+=1){
+                  result += `<li class="prev"> ${prevLastSunDate}</li>` ;
+                  prevLastSunDate += 1;
+               }
+            } 
+         
+            // 날짜출력
+            if(year === toYear && month === toMonth && i === toDate){
+               result += `<li class="todate">${i}</li>` ;
+            }else{
+               result += `<li>${i}</li>` ;
+            }
+
+            // 줄바꿈
+            num += 1;
+            if(num % 7 === 0) result += `<li class="br"></li>`;
+
+            // 다음달 빈칸출력
+            if(i === lastDate){
+               var nextDay = 0;
+               for(var next=lastDay+1; next<7; next+=1){
+                  nextDay +=1;
+                  result += `<li class="next"> ${nextDay}</li>` ;
+               }
+            }
+         }
+         result += `</ul>`;
+
+         document.body.innerHTML = result;
+      }
+     
+    
+      document.addEventListener('click', function(e){
+         var target = e.target;
+         if(target.classList[0] === 'prev-month'){
+            if(month !== 0){
+            month -= 1;
+            }else{
+               year -= 1;
+               month = 11;
+            }
+            makeCalendar(year, month);
+         }else if(target.classList[0] === 'next-month'){
+            if(month !== 11){
+               month += 1;
+            }else{
+               year += 1;
+               month = 0;
+            }
+            makeCalendar(year, month);
+         }
+      });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>별찍기</title>
+</head>
+
+<body>
+  <!-- 
+  1.별찍기
+  사용자로부터 양의 정수를 하나 입력받아 다음과 같이 출력하는 프로그램을 작성하세요. <br>
+  단, 사용자가 입력한 내용이 숫자가 아니거나 또는 0보다 작은 수인 경우, 사용자에게 경고를 보여주고 입력을 다시 받으세요.
+  ```
+  -->
+
+
+  <script>
+    var input = "4";
+    input = parseInt(input);
+    var star = '';
+    // *
+    // **
+    // ***
+    // ****
+    var result = '';
+    for (var i=0; i < input; i+=1) {
+      star += '*';
+      result += star + '\n';
+    }
+    console.log(result);
+
+    //-응용1. 
+    //    *
+    //   **
+    //  ***
+    // ****
+    var result1 = '';
+    for (var i=0; i < input; i+=1) {
+      star = '';
+      for (var a = input-i-1; a > 0; a -= 1) star += ' ';
+      for (var b = input-i-1; b < input; b+= 1) star += '*';
+      result1 += star + '\n';
+    }
+    console.log(result1);
+
+    // -응용2.
+    // ****
+    // ***
+    // **
+    // *
+    var result2= '';
+    for (var i=0; i < input; i+=1) {
+      star='';
+      for(var a = input-i; a > 0; a-=1) star +='*'; 
+      result2 += star + '\n';         
+    }
+    console.log('result2','\r\n'+result2);
+
+    // -응용3.
+    //    *
+    //   ***
+    //  *****
+    // *******
+    var result3 = '';
+    var oddNum = 0;
+    for (var i=0; i < input; i+=1) {
+      star = '';
+      oddNum += 2;
+      for(var a = input-i-1; a > 0; a-=1) star += ' ';
+      for(var b = 1; b < oddNum; b+= 1) star += '*';
+      result3 += star + '\n';
+    }
+    console.log(result3);
+    // -응용4.
+    //    *
+    //   * *
+    //  *   *
+    // *     *
+    
+    var result4 = '';
+    var oddNum = 0;
+    for (var i=0; i < input; i+=1) {
+      star = '';
+ 
+      for(var a = input-i-1; a > 0; a-=1) star += ' ';
+      star += '*';
+      if(i !== 0) {
+        oddNum +=2;
+        for(var b = 1; b < oddNum; b+=1){
+          star += ' ';
+        }
+        star += '*';
+        
+      }
+      result4 += star + '\n'      
+    }
+    console.log(result4);
+    // -응용5.
+    //    *
+    //   ***
+    //  *****
+    // *******
+    //  *****
+    //   ***
+    //    *
+    var result5 = '';
+    var oddNum = 0;
+    for (var i=0; i < input; i+=1) {
+      star = '';
+      oddNum += 2;
+      for(var a = input-i-1; a > 0; a-=1 ) star += ' ';
+      for(var b = 1; b < oddNum; b+=1 ) star += '*';
+      result5 += star +'\n';
+    }
+    oddNum -=1;
+    for( var i=0; i < input-1; i+=1){
+      star = '';
+      oddNum -=2;
+      for(var a = 0; a < i+1; a+=1) star += ' ';
+      for(var b = 0; b < oddNum ; b+=1) star += '*';      
+      result5 += star + '\n';
+    }
+    console.log(result5);
+    
+  </script>
+
+</body>
+
+</html>

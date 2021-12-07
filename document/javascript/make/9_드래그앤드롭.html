@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drag_and_drop</title>
+</head>
+<body>
+  
+  <div id="box" style="position: absolute; left: 0; top: 0; width: 100px; height: 100px; background-color: red;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    
+    //박스를 드래그하는 중인지 여부를 표시할 함수 
+    var isDrag;
+    //마지막으로 이벤트가 발생한 시점의 마우스 좌표.
+    var mouseX, mouseY;
+    //박스를 눌렀을때
+    $('#box').on('mousedown', function(e){
+      isDrag = true;
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+    //박스에서 마우스가 떨어질때
+    $('#box').on('mouseup', function(){
+      isDrag = false;
+    });
+    //문서 내에서 이동할때
+    $(document).on('mousemove', function(e){
+
+      if(isDrag) $('#box').css({
+        top: parseInt($('#box').css("top").replace('px','')) + (e.clientY - mouseY) , 
+        left: parseInt($('#box').css("left").replace('px','')) + (e.clientX - mouseX)
+      });
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+  </script>
+</body>
+</html>

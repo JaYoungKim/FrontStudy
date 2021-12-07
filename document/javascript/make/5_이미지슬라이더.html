@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 슬라이더</title>
+  <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+  
+  <div class="slide-img">
+    <ul>
+      <li><img src="img/1.jpg" alt=""></li>
+      <li><img src="img/2.jpg" alt=""></li>
+      <li><img src="img/3.jpg" alt=""></li>
+      <li><img src="img/4.jpg" alt=""></li>
+    </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    // ## 8. 슬라이더 만들기
+    // 이미지 슬라이더 만들기. <br>
+    // 좌 / 우 화살표.클릭시 이미지 넘어감. <br>
+    // 이미지 갯수만큼의 버튼이 있어서 버튼 누르면 대응하는 이미지로 한방에 가는 기능. <br >
+    // 아무 조작 없이 일정시간(=약 5초) 지나면 자동으로 다음 이미지로 넘어가는 기능. <br >
+    // 마우스를 이미지에 올리면 자동넘김이 멈췄다가, 마우스를 이미지에서 빼면 다시 자동넘김이 재개되어야 함.
+
+    // 
+    var $slide = $('.slide-img');
+    var $ul = $slide.find('ul');
+    var $li = $ul.find('li');
+    var $pagenation = ''; 
+    var w = $slide.width();
+    var timer; 
+    var speed = 300;
+    var interval = 5000;
+
+    createSlide();
+    function createSlide(){
+      //초기화 
+      for(var i=0; i<$li.length; i+=1){
+        $li.eq(i).attr('data-index', i);
+        $pagenation += '<button type=button></button>'
+      }
+      $li.last().prependTo($ul);
+      $ul.prepend($li.last()).css({left: -w});
+      $slide.wrap('<div class="slide-wrap"></div>');
+      $slide.after('<button class="slide-btn-prev"></button>');
+      $slide.after('<button class="slide-btn-next"></button>');
+      $slide.after('<div class="slide-pagenation">'+$pagenation+'</div>');
+
+      start(interval);
+    };
+    // 클릭이벤트 
+    $(document).on('click', function(e){
+      var t = $(e.target);
+      //이전
+      if(t.closest('slide-btn-prev')) prev();
+      //다음
+      else if(t.hasClass('slide-btn-next')) next();
+      //페이지네이션
+      else if(t.parents().hasClass('slide-pagenation')){
+        var pageIndex = t.index();
+        // 현재 0번째 data index 
+        var currentZero = parseInt($slide.find('li').first().attr('data-index'));
+        var currentIndex = parseInt($slide.find('[data-index='+pageIndex+']').index());
+        if(pageIndex !== currentZero){
+          for(var i=0; i< currentIndex; i+=1) next();
+        }else{ 
+          prev();
+        }
+      }
+    })
+    // 자동롤링
+    $(document).on({
+      'mouseover':function(e){
+        var t=$(e.target);
+        if (t.closest('.slide-wrap').is('.slide-wrap')){
+          start(interval);
+        }
+      },
+      'mouseout': function(e){
+        if (t.closest('.slide-wrap').is('.slide-wrap')){
+          clearInterval(timer);
+        }
+      }
+    });
+    function start(interval){
+      timer = setInterval(function(){
+        next();
+      },interval);
+    }
+    //prev 
+    function prev(){
+      $ul.stop().animate({left:0},function(){
+          //$li 사용시 변경된 li를 못찾아옴
+        $ul.find('li').last().css('color','red').prependTo($ul);
+        $ul.css({left:-w});
+      },speed);
+    }
+    function next(){
+      $ul.stop().animate({left:-w * 2},function(){
+        $ul.find('li').first().appendTo($ul);
+        $ul.css({left:-w});
+      },speed);
+    }
+
+    
+
+  </script>
+</body>
+</html>

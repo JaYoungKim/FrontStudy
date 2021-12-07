@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.slide-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide-img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 822px;
+  height: 476px;
+}
+
+.slide-img ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide-pagenation {
+  position: absolute;
+  bottom: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.slide-pagenation button {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.slide-btn-prev, .slide-btn-next {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.slide-btn-prev::before, .slide-btn-next::before {
+  position: absolute;
+  left: calc(50%);
+  top: 50%;
+  width: 30%;
+  height: 30%;
+  margin-top: -3px;
+  margin-left: 3px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 1px 1px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+}
+
+.slide-btn-prev {
+  -webkit-transform: translateX(-411px) rotate(45deg);
+          transform: translateX(-411px) rotate(45deg);
+}
+
+.slide-btn-next {
+  -webkit-transform: translateX(411px) rotate(225deg);
+          transform: translateX(411px) rotate(225deg);
+}
