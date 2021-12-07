@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 합치기</title>
+</head>
+<body>
+  
+  <script>
+    // + 
+    var str = "Hello" + " " + "World";
+    console.log(str); //Hello World
+    var str2 = "Hello";
+    str2 += " ";
+    str2 += "World";
+    console.log(str2) //Hello World
+
+
+    // String.concat(string , [string], [....]);
+    var str3 = 'Hello';
+    console.log( str3.concat(' ', 'World', '!'));
+    console.log( ''.concat(null)) // null
+    console.log( ''.concat(true, false)) // truefalse
+    console.log( ''.concat(1,2)) //12
+    console.log( ''.concat({name:'이름',value:'자영'})); //[object Object]
+    console.log( ''.concat([1,2])) // 1,2
+
+    //배열에 사용하면 배열을 이어붙인다.
+    var arr = ['hello', ' '];
+    console.log( arr.concat('World', '!')); //['hello', ' ', 'World', '!']
+    
+    console.log('str3', str3.concat('World', '!')) // HelloWorld!
+
+
+    // Array.join([separator]])
+    var arr = ['hello', 'World'];
+    console.log( arr.join() ); //hello,World
+    console.log( arr.join(' ') ); //hello World
+    console.log( arr.join('-') ); //hello-World
+
+</script>
+
+</body>
+</html>

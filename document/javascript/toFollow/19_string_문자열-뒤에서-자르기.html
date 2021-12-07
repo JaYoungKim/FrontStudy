@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 뒤에서 자르기</title>
+</head>
+<body>
+  <script>
+    
+    var str ='abcdefg'
+    
+    // 뒤에서부터 두글자 자르기.
+    // String.substr(start, length);
+    console.log(str.substr(str.length-2, 2));
+
+    // String.substring(start, end);
+    console.log(str.substring(str.length-2, str.length ));
+
+    // String.slice(start, end);
+    console.log(str.slice(-2));
+
+  </script>
+</body>
+</html>

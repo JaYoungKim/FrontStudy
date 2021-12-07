@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 마지막 콤마 제거</title>
+</head>
+<body>
+  
+  <script>
+    const str1 = "apple, banana";
+    const str2 = "apple, banana,";
+    const str3 = "apple, banana, ";
+
+    /**
+     *  / : 정규식 전체를 둘러싼 / 는 정규식의 시작과 끝을 의미한다
+     *  , : 우리가 찾고자하는 ',' 문자열
+     *  \s : space나 tab 등의 공백을 의미
+     *  * : 0번 이상.
+     *  $ : 문자열의 끝
+    */
+    console.log(str1.replace(/,\s*$/,''))
+    console.log(str2.replace(/,\s*$/,''))
+    console.log(str3.replace(/,\s*$/,''))
+  </script>
+</body>
+</html>

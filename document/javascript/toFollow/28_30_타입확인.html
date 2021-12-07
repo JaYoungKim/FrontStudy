@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>데이터 타입 확인하기</title>
+</head>
+<body>
+
+  <div id="sample">안녕하세요</div>
+
+  <script>
+
+  console.log("========================= typeof")
+  
+  // typeof operand 
+  // operand 타입을 나타내는 문자열을 리턴
+
+   console.log(typeof 10); //number
+   console.log(typeof '10'); //string
+   console.log(typeof undefined); //undefined
+   console.log(typeof 0); //number
+   console.log(typeof 1.2); //number
+   console.log(typeof -20); //number
+   console.log(typeof null); //null
+   console.log(typeof true); //boolean
+   console.log(typeof false); //boolean
+   console.log(typeof [1,2,3]) //array
+   console.log(typeof {}) //object
+   console.log(typeof function(){}); //function
+   console.log(typeof (11n))
+   console.log(typeof undeclaredVariable) //undefined : console error
+
+
+   console.log("========================= Array")
+   // Arrat.isArray(obj)
+   // 파라미터로 받은 obj가 배열인지 여부를 boolean으로 리턴
+
+   console.log(Array.isArray([1,2,3])) //true
+   console.log(Array.isArray(new Array(1))) //true
+   console.log(Array.isArray('10')) //false
+   console.log(Array.isArray({})) //false
+
+
+  console.log("=========================== node type");
+    /**
+     * nodeType 
+     * 1 : element
+     * 3 : text
+     * 4 : CDATASection
+     * 7 : ProcessingInstruction - <?xml-stylesheet.... ?>
+     * 8 : Comment - <!-- comment -->
+     * 9 : Document - document
+     * 10 : DocumentType - <!DOCTYPE html>
+     * 11 : DocumentFragment 
+    */
+
+
+  let el = document.getElementById('sample');
+
+  console.log(document.nodeType); //9
+  console.log(el.nodeType); //1
+  console.log(el.firstChild.nodeType); //3
+
+  </script>
+</body>
+</html>

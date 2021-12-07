@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>첫 글자만 대문자로 변경하기</title>
+</head>
+<body>
+  
+  <script>
+    var str = 'abcd'
+
+    // 1) 첫번째 글자 가져오기 
+    var firstStr = str.charAt(0);
+    // 2) 첫번째 글자 대문자로 바꾸기 
+    firstStr = firstStr.toUpperCase();
+    // 3) 첫번째 글자를 제외한 나머지 글자 찾아서 더하기
+    firstStr += str.slice(1, str.length-1);
+    console.log(firstStr);
+
+    var result = str.charAt(0).toUpperCase() + str.slice(1, str.length-1);
+    console.log(result);
+
+</script>
+
+</body>
+</html>

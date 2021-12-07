@@ -1,10 +1,12 @@
 # 강의
 ## Number type
+* [1대1 수업영상: 1코스 2강 변수,Number type ](https://drive.google.com/drive/folders/1FGg86LpvAQweDXGqJ7kG7ijWaaTIi1du?usp=sharing)
 * [Javascript] [01. 반올림(round), 올림(ceil), 내림(floor) - 소수점, 음수,자리수 지정 ](https://hianna.tistory.com/446?category=764998) 
 * [Javascript] [02. 숫자가 정수인지, 실수인지 체크하는 2가지 방법 ](https://hianna.tistory.com/463?category=764998)
 
 
 ## String type
+* [1대1 수업영상: 1코스 3강 String type](https://drive.google.com/drive/folders/1gQ-nVMfPot5ZzqJZ_7cGjtBplBjAD0eI?usp=sharing)
 * [Javascript] [03. 대소문자 변경 (대문자를 소문자로, 소문자를 대문자로)](https://hianna.tistory.com/334?category=764998)
 * [Javascript] [04. 문자열 안에 쌍따옴표, 홑따옴표 표시하는 3가지 방법](https://hianna.tistory.com/335?category=764998)
 * [Javascript] [05. 문자열 길이 체크하기 ](https://hianna.tistory.com/336?category=764998)
@@ -40,6 +42,7 @@
 
 
 ## Boolean Type
+* [1대1 수업영상: 1코스 4강 Boolen Type](https://drive.google.com/drive/folders/1n3zGwOr2ihfql1UQO3JjaccqOCnFaTlR?usp=sharing)
 * [Javascript] [31. '==' 연산자와 '===' 연산자의 차이점](https://hianna.tistory.com/376?category=764998)
 * [Javascript] [32. '=='와 '==='의 차이 (null, undefined)](https://hianna.tistory.com/376?category=764998)
 * [Javascript] [33. 문자열 비교하기 (동등 비교, 대소 비교)](https://hianna.tistory.com/374?category=764998)
@@ -53,37 +56,42 @@
 
 
 ## Array(배열)
-* [Javascript] [42. 배열 선언하는 2가지 방법](https://hianna.tistory.com/394?category=764998)
-* [Javascript] [43. 배열 길이 체크, 설정하기 (length)](https://hianna.tistory.com/366?category=764998)
-* [Javascript] [44. 배열 앞, 뒤에 값 추가, 삭제하기 (1)](https://hianna.tistory.com/395?category=764998)
-* [Javascript] [45. 배열 중간에 값 추가, 삭제하기 (2) - splice() 함수](https://hianna.tistory.com/396?category=764998)
-* [Javascript] [46. 배열 합치기 3가지 방법 ](https://hianna.tistory.com/397?category=764998)
-* [Javascript] [47. 배열 자르기 - slice() ](https://hianna.tistory.com/398?category=764998)
-* [Javascript] [48. 배열 같은 값으로 채우기](https://hianna.tistory.com/399?category=764998)
-* [Javascript] [49. 배열 특정 값 위치(index) 찾기 - indexOf(), lastIndexOf() ](https://hianna.tistory.com/404?category=764998)
-* [Javascript] [50. 배열 특정 값 위치(index) 찾기 - findIndex() ](https://hianna.tistory.com/405)
-* [Javascript] [51. 배열에 특정 값이 포함되어 있는지 여부 체크하기](https://hianna.tistory.com/403?category=764998)
-* [Javascript] [52. 배열의 특정 값 찾기 - find(), filter()](https://hianna.tistory.com/406?category=764998)
-* [Javascript] [53. 배열에서 특정 값 개수 구하기 ](https://hianna.tistory.com/488?category=764998)
-* [Javascript] [54. 배열에서 특정 값 삭제하기](https://hianna.tistory.com/489?category=764998)
-* [Javascript] [55. 배열 map() 함수로 변경된 새로운 배열 생성하기 ](https://hianna.tistory.com/407?category=764998)
-* [Javascript] [56. 배열의 합계, 평균 계산하기 - reduce(), reduceRight() ](https://hianna.tistory.com/408?category=764998)
-* [Javascript] [57. forEach에서 continue 구현하기](https://hianna.tistory.com/418?category=764998)
-* [Javascript] [58. 배열 정렬하기 (오름차순, 내림차순, 문자열, 객체) ](https://hianna.tistory.com/409?category=764998)
-* [Javascript] [59. 배열 값 중복 체크하는 3가지 방법](https://hianna.tistory.com/415?category=764998)
-* [Javascript] [60. 배열 초기화(빈 배열로)하는 4가지 방법 ](https://hianna.tistory.com/419?category=764998)
-* [Javascript] [61. 배열 중복 제거하는 3가지 방법](https://hianna.tistory.com/422?category=764998)
-* [Javascript] [62. 배열 중복 값 개수 구하기 ](https://hianna.tistory.com/459?category=764998)
-* [Javascript] [63. 배열에서 빈값 제거하기](https://hianna.tistory.com/423?category=764998)
-* [Javascript] [64. 빈 배열 체크하기](https://hianna.tistory.com/461?category=764998)
-* [Javascript] [65. 배열을 문자열로 변환하기](https://hianna.tistory.com/447?category=764998)
-* [Javascript] [66. 배열 거꾸로 뒤집는 3가지 방법 ](https://hianna.tistory.com/448?category=764998)
-* [Javascript] [67. 배열에서 최대값, 최소값 구하기](https://hianna.tistory.com/487?category=764998)
-* [Javascript] [68. 배열 첫번째 값, 마지막 값 가져오기](https://hianna.tistory.com/505?category=764998)
+* [1대1 수업영상: 1코스 5강 Array type - 영상없음, 음성만 있음](https://drive.google.com/drive/folders/17BiPu9ktgtRLyqp0o8wRhNeXHe0XBxw4?usp=sharing)
+* [Javascript] [41. 배열 선언하는 2가지 방법](https://hianna.tistory.com/394?category=764998)
+* [Javascript] [42. 배열 길이 체크, 설정하기 (length)](https://hianna.tistory.com/366?category=764998)
+* [Javascript] [43. 배열 앞, 뒤에 값 추가, 삭제하기 (1)](https://hianna.tistory.com/395?category=764998)
+* [Javascript] [44. 배열 중간에 값 추가, 삭제하기 (2) - splice() 함수](https://hianna.tistory.com/396?category=764998)
+* [Javascript] [45. 배열 합치기 3가지 방법 ](https://hianna.tistory.com/397?category=764998)
+* [Javascript] [46. 배열 자르기 - slice() ](https://hianna.tistory.com/398?category=764998)
+* [Javascript] [47. 배열 같은 값으로 채우기](https://hianna.tistory.com/399?category=764998)
+* [Javascript] [48. 배열 특정 값 위치(index) 찾기 - indexOf(), lastIndexOf() ](https://hianna.tistory.com/404?category=764998)
+* [Javascript] [49. 배열 특정 값 위치(index) 찾기 - findIndex() ](https://hianna.tistory.com/405)
+* [Javascript] [50. 배열에 특정 값이 포함되어 있는지 여부 체크하기](https://hianna.tistory.com/403?category=764998)
+* [Javascript] [51. 배열의 특정 값 찾기 - find(), filter()](https://hianna.tistory.com/406?category=764998)
+* [Javascript] [52. 배열에서 특정 값 개수 구하기 ](https://hianna.tistory.com/488?category=764998)
+* [Javascript] [53. 배열에서 특정 값 삭제하기](https://hianna.tistory.com/489?category=764998)
+* [Javascript] [54. 배열 map() 함수로 변경된 새로운 배열 생성하기 ](https://hianna.tistory.com/407?category=764998)
+* [Javascript] [55. 배열의 합계, 평균 계산하기 - reduce(), reduceRight() ](https://hianna.tistory.com/408?category=764998)
+* [Javascript] [56. forEach에서 continue 구현하기](https://hianna.tistory.com/418?category=764998)
+* [Javascript] [57. 배열 정렬하기 (오름차순, 내림차순, 문자열, 객체) ](https://hianna.tistory.com/409?category=764998)
+* [Javascript] [58. 배열 값 중복 체크하는 3가지 방법](https://hianna.tistory.com/415?category=764998)
+* [Javascript] [59. 배열 초기화(빈 배열로)하는 4가지 방법 ](https://hianna.tistory.com/419?category=764998)
+* [Javascript] [60. 배열 중복 제거하는 3가지 방법](https://hianna.tistory.com/422?category=764998)
+* [Javascript] [61. 배열 중복 값 개수 구하기 ](https://hianna.tistory.com/459?category=764998)
+* [Javascript] [62. 배열에서 빈값 제거하기](https://hianna.tistory.com/423?category=764998)
+* [Javascript] [63. 빈 배열 체크하기](https://hianna.tistory.com/461?category=764998)
+* [Javascript] [64. 배열을 문자열로 변환하기](https://hianna.tistory.com/447?category=764998)
+* [Javascript] [65. 배열 거꾸로 뒤집는 3가지 방법 ](https://hianna.tistory.com/448?category=764998)
+* [Javascript] [66. 배열에서 최대값, 최소값 구하기](https://hianna.tistory.com/487?category=764998)
+* [Javascript] [67. 배열 첫번째 값, 마지막 값 가져오기](https://hianna.tistory.com/505?category=764998)
 
+## Function(함수)
+* [1대1 수업영상: 1코스 6강 function type](https://drive.google.com/drive/folders/1lmP5IAtLCBOHXz8PMjhfifgogGC1TEgb?usp=sharing)
+* [Javascript/ES6] [68. 함수 파라미터(매개변수) 기본값 설정하기](https://hianna.tistory.com/486?category=764998)
 
 
 ## Object(객체)
+* [1대1 수업영상: 1코스 7강 object type](https://drive.google.com/drive/folders/1lx2GBh_17u5W4xJYviWq1qe3yQlcOybm?usp=sharing)
 * [Javascript] [69.객체 속성 읽기, 추가, 변경, 삭제 ](https://hianna.tistory.com/453?category=764998)
 * [Javascript] [71.객체에 특정 속성이 존재하는지 체크하는 3가지 방법 ](https://hianna.tistory.com/420?category=764998)
 * [Javascript] [72. Set 객체를 배열(Array)로 변환하는 3가지 방법 ](https://hianna.tistory.com/421?category=764998)
@@ -109,11 +117,8 @@
 * [Javascript] [89. 세는 나이, 만나이 계산하기  ]()
 
 
-## Function(함수)
-* [Javascript/ES6] [90. 함수 파라미터(매개변수) 기본값 설정하기](https://hianna.tistory.com/486?category=764998)
-
-
 ## BOM 
+* [1대1 수업영상: 1코스 8강 BOM](https://drive.google.com/drive/folders/14CTloSlV3Di76XHOej-kPL70XZXF294N?usp=sharing)
 * [Javascript] [91. 절대값 구하기](https://hianna.tistory.com/389?category=764998)
 * [Javascript] [92. 난수 생성하기 (랜덤 숫자, Random Number)](https://hianna.tistory.com/454?category=764998)
 * [Javascript] [93. 현재 페이지 URL 가져오기](https://hianna.tistory.com/464?category=764998)
@@ -123,12 +128,13 @@
 
 
 ## DOM
-* [Javascript] [96. class 추가/변경/삭제/읽기 (className, classList) ](https://hianna.tistory.com/469?category=764998)
-* [Javascript] [97. innerText와 innerHTML의 차이점 ](https://hianna.tistory.com/480?category=764998)
-* [Javascript] [98. innerHTML, innerText, textContent 차이점](https://hianna.tistory.com/483?category=764998)
-* [Javascript] [99. div 안의 내용 가져오기, 추가, 변경, 삭제 (text, html)](https://hianna.tistory.com/479?category=764998)
-* [Javascript] [100. div 생성, 삭제, 숨기기 ](https://hianna.tistory.com/484?category=764998)
-* [Javascript] [101. 선택자, DOM 특정 요소(element) 찾기 ](https://hianna.tistory.com/485?category=764998)
+* [1대1 수업영상 : 1코스 9강 DOM](https://drive.google.com/drive/folders/1mnjcgZOaZcLliqtzM4qltboqOtjK64pf?usp=sharing)
+* [Javascript] [97. class 추가/변경/삭제/읽기 (className, classList) ](https://hianna.tistory.com/469?category=764998)
+* [Javascript] [98. innerText와 innerHTML의 차이점 ](https://hianna.tistory.com/480?category=764998)
+* [Javascript] [99. innerHTML, innerText, textContent 차이점](https://hianna.tistory.com/483?category=764998)
+* [Javascript] [100.div 안의 내용 가져오기, 추가, 변경, 삭제 (text, html)](https://hianna.tistory.com/479?category=764998)
+* [Javascript] [101. div 생성, 삭제, 숨기기 ](https://hianna.tistory.com/484?category=764998)
+* [Javascript] [102. 선택자, DOM 특정 요소(element) 찾기 ](https://hianna.tistory.com/485?category=764998)
 
 
 
@@ -196,3 +202,12 @@
 
 
 
+## 1대1 수업영상: 
+* [1코스 10강 Jquery](https://drive.google.com/drive/folders/1_GnM2fD2WQ-aqPr10Yt0VqgwESpxuWIE?usp=sharing)
+* [1코스 12강 자료구조 #1](https://drive.google.com/drive/folders/1dN93jhRmT7YcYpPQWQfb4SodSKLLvt14?usp=sharing)
+* [1코스 13강 자료구조 #2](https://drive.google.com/drive/folders/1yI5Eb_UFsvpEUnru9M8ZI6WRXp5z-Lwh?usp=sharing)
+
+
+## ProtoType 
+ * [ProtoType 정리](https://velog.io/@adam2/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Prototype-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC)
+ * [함수형프로그래밍 & 객체지향 프로그래밍 ] (https://mangsby.com/blog/programming/fp-vs-oop/)

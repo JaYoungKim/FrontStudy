@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열 거꾸로 뒤집기</title>
+</head>
+<body>
+  <script>
+
+    const str = 'abcde';
+    const step1 = str.split('') //문자열 배열 변환
+    const step2 = step1.reverse(); //배열 뒤집기 
+    const step3 = step2.join('');
+    
+    console.log(step1);
+    console.log(step2);
+    console.log(step3);
+
+    const str2 =  str.split('').reverse().join('');
+
+    console.log(str2);
+
+  </script>
+</body>
+</html>

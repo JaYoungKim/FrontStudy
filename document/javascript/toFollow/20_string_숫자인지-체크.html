@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열이 숫자인지 체크하기</title>
+</head>
+<body>
+  <script>
+    //isNaN(value); Is Not a Number 의 약어 
+
+    // 타입에 상관없이 숫자가 입력되면, insNaN()은 false를 리턴한다.
+    console.log(isNaN('123')) //false
+    console.log(isNaN('123.1')) //false
+    console.log(isNaN(123)) //false
+    console.log(isNaN(-123)) //false
+    console.log(isNaN(.1)) //false
+    console.log(isNaN(123+123)) //false? 
+
+    console.log('======================')
+    // 문자열이 입력되면 true를 리턴한다. 
+    console.log(isNaN('abc')) //true
+    console.log(isNaN('123 + 123')) //true
+    // undefinded와 {}는 true를 리턴한다
+    console.log(isNaN(undefined)) //true
+    console.log(isNaN({})) //true
+
+    console.log('======================')
+
+   // '', ' ', null, boolean 값, 배열은 false를 리턴한다. 
+    console.log(isNaN('')) //false
+    console.log(isNaN(' ')) //false 
+    console.log(isNaN(null)) //false
+    console.log(isNaN(true)) //false
+    console.log(isNaN([])) //false
+    
+    console.log('======================')
+
+    console.log(isNaN(new Date())) //false
+    console.log(isNaN(new Date().toString())) //true
+
+
+
+
+
+  </script>
+</body>
+</html>

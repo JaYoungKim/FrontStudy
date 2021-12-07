@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문자열숫자로 변환하기</title>
+</head>
+<body>
+  <script>
+    // parseInt(string, radix)
+    /**
+     * string = 숫자로 변환할 문자열
+     * radix = (optional) 2~36의 진법
+     * 
+     * string의 첫 글자를 정수로 변경할수 없으면 NaN을 리턴한다 
+     */
+
+     console.log("======================= parseInt" *1)
+
+     console.log(parseInt("10" *1)) // 10
+     console.log(parseInt("-10")) // -10
+     console.log(parseInt("10.9")) // 10 내림
+     console.log(parseInt(10)) // 10
+     console.log(parseInt("10n")) // 10
+     console.log(parseInt("10nndf13")) // 10
+     console.log(parseInt("     10")) // 10
+     console.log(parseInt("10       ")) // 10
+     console.log(parseInt("k10")) // NaN
+     console.log(parseInt("")) // NaN
+
+
+     console.log(parseInt("10", 2)) // 2
+     console.log(parseInt("2", 2)) // NaN
+     console.log(parseInt("0xF" , 16)) // 15
+     //0x로 시작하면 16진수로 자동 변경된다
+     console.log(parseInt("0xF")) // 15
+     //0~F 범위 바깥의 문자열은 무시된다. 
+     console.log(parseInt("0xFkk")) // 15
+
+     // radix는 입력해주는게 좋다. 
+
+     console.log("======================= parseFloat")
+
+    // parseFloat(string)
+    // string을 실수로 변환 할 수 없을 경우 NaN을 리턴한다. 
+    console.log(parseFloat("10")) // 10
+    console.log(parseFloat("-10")) // -10
+    console.log(parseFloat("10.9")) // 10.9
+    console.log(parseFloat(10.9)) // 10.9
+    console.log(parseFloat("10.9njdfnkf")) // 10.9
+    console.log(parseFloat("10.9dfd5ff15")) // 10.9
+
+    console.log(parseFloat("abcd10.9")) // NaN
+    console.log(parseFloat("     10.9")) // 10.9
+    console.log(parseFloat("10.9       ")) // 10.9
+    console.log(parseFloat("")) // NaN
+
+    console.log("======================= +")
+    // 문자열 앞에 + 단항연산자를 붙여주면 문자열을 숫자 타입으로 변환하여 리턴한다.  
+    console.log(+"10") // 10
+    console.log(+"-10") // -10
+    console.log(+"10.9") // 10.9
+    console.log(+"abc") // NaN
+    console.log(+true) // 1
+    console.log(+false) // 0
+
+    console.log("======================= *")
+    console.log("10"*1) // 10
+    console.log("-10"*1) // -10
+    console.log("10.9"*1) // 10.9
+    console.log("abc"*1) // NaN
+    console.log(true*1) // 1
+    console.log(false*1) // 0
+
+  </script>
+</body>
+</html>

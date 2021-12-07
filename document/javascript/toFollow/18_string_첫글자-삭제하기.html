@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>첫글자 삭제하기</title>
+</head>
+<body>
+  
+  <script>
+
+    var str = 'abcd'
+    var result = '';
+
+    // String.substr(start, length) length는 start위치부터 시작하는 갯수
+    result = str.substr(1,str.length-1);
+    console.log('substr',result);
+    console.log('substr',str.substr(1));
+
+    // String.substring(start, end) end:는 index 번호
+    result = str.substring( 1, str.length);
+    console.log('substring', result);
+    console.log('substr',str.substring(1));
+    // String.slice(start, end) end:는 index 번호
+    result = str.slice(1, str.length);
+    console.log('slice', result);
+    console.log('substr',str.slice(1));
+  </script>
+
+</body>
+</html>

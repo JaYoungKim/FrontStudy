@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>숫자,콤마 제거</title>
+</head>
+<body>
+  <script>
+    const str = '123,456,789';
+    // str.replace(regexp|substr, newSubStr|function);
+    /* regext: 정규식 객체 또는 리터럴. newSubStr 또는 funtion이 반환한 값으로 대체된다. 
+       substr: newSubStr로 대체될 string
+       newSubStr: 첫번째 파라미터를 대신 할 문자열
+       function: 첫번째 파리미터를 대신 할 리턴값 
+    */
+    // 첫번째로 발견한 값만 치환
+    console.log(str.replace(',',''));
+    console.log(str.replace(/,/g,''));
+
+    // str.split([separator[, limit]]) , arr.join([separator]); 
+
+    console.log(str.split(',').join(''));
+  </script>
+</body>
+</html>
