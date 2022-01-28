@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시판 해시태그 붙이기</title>
+  <style>
+    *{padding:0; margin:0;}
+    ul,li{list-style: none;}
+    th,td{padding:5px;}
+  </style>
+</head>
+<body>
+  
+  <table></table>
+
+
+<script>
+  var $body = document.querySelector('body'); 
+  var setBoardNum = 10;
+
+  loadJSON(function(response){
+    //JSON 문자열을 객체로 구문 분석
+    var json =JSON.parse(response);
+    hash(json);
+
+  });
+
+  // ie json load
+  function loadJSON(callback){
+    var xobj = new XMLHttpRequest;
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'json/data.json', true);
+    // 'data'를 파일 경로로 바꿉니다.
+    xobj.onreadystatechange = function(){
+      if(xobj.readyState === 4&& xobj.status === 200){
+        // 익명 콜백의 필수 사용
+        // as .open() will NOT return a value but simply returns undefined in asynchronous mode
+        callback(xobj.responseText);
+      }
+    };
+    xobj.send(null);
+  };
+
+  // 해시태그 체크 
+  function hash(json){
+    var href = location.href.split('?');
+    var para = location.search.split('=');
+    var leng = Math.ceil(json.length / setBoardNum) ;
+    var rest = json.length % setBoardNum ;
+    if( rest !== 0) leng +1; // 나머지가 0이 아니라면 게시물이 더 있는 것이므로 페이지 1을 더한다.
+    if(parseInt(para[1]) <= leng && parseInt(para[1]) > 0){ 
+      // 해시태그가 leng 값보다 작거나 같을때는 해시태그 값을 기준으로 화면 표기 
+      createTable(json, setBoardNum * (parseInt(para[1])-1));
+    }else if(para[1] === undefined){
+      createTable(json,0);
+    }else{ 
+      location.href = href[0];
+    }
+  }
+
+  // 게시판 목록 제작
+  function createTable(json, num ){
+    var content = '<thead><tr><th>글번호</th><th>제목</th><th>작성자</th></tr></thead><tbody>'
+    var maxleng = num + setBoardNum;
+    if(maxleng > json.length) maxleng = json.length;
+
+    for(var i=num; i< maxleng; i+= 1){
+      content +='<tr>'
+      content +='<td>'+ (json.length - i) +'</td>'
+      content +='<td>'+json[i].subject+'</td>'
+      content +='<td>'+json[i].writer+'</td>'
+      content +='</tr>'
+    }
+    content +='</tbody>';
+    document.querySelector('table').innerHTML = content;
+  }
+
+  
+</script>
+
+</body>
+</html>

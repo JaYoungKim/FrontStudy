@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+// 1. 표준용어 정의된 엑셀 파일을 만든다(보통 DBMS 관리 툴에 표준용어 정의한게 등록되어 있습니다.)
+// 2. 엑셀파일을 이용해서 내가 여러 한글 단어를 조합해서 입력하면 영어 약어가 만들어진다. 
+// (예 : 엑셀 다운로드 기능 --> excelDwldSkll)
+
+// loadJSON(function(response){
+//     //JSON 문자열을 객체로 구문 분석
+//     var json =JSON.parse(response);
+//   console.log(json)
+//   });
+
+//   // ie json load
+//   function loadJSON(callback){
+//     var xobj = new XMLHttpRequest;
+//     xobj.overrideMimeType("application/json");
+//     xobj.open('GET', 'http://www.ibtk.kr/katsKsTerm/edeaa7e52604a5fd4eea491815bcfadf', true);
+//     // 'data'를 파일 경로로 바꿉니다.
+//     xobj.onreadystatechange = function(){
+//       if(xobj.readyState === 4&& xobj.status === 200){
+//         // 익명 콜백의 필수 사용
+//         // as .open() will NOT return a value but simply returns undefined in asynchronous mode
+//         callback(xobj.responseText);
+//       }
+//     };
+//     xobj.send(null);
+//   };
+        $.ajax({
+            method: "GET",
+            url: "http://www.ibtk.kr/katsKsTerm/edeaa7e52604a5fd4eea491815bcfadf",
+            data: { index : 276371},
+            // headers : {Authorization: "KakaoAK"}
+        })
+        .done(function (msg) {
+            console.log(msg);
+        });
+  </script>
+</body>
+</html>
