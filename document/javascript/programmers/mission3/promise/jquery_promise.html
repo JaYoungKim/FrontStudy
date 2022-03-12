@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <main id="app"></main>
+
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+
+
+    function ajaxLoad(url) {
+      return $.ajax({
+        url: "./include/" + url + ".html",
+        success: function (data) {
+          $('#app').append(data);
+          console.log(data)
+        },
+        error: function (err) {
+          console.error('error:', err)
+        }
+      })
+    }
+
+    ajaxLoad('title')
+      .then(function () {
+        return ajaxLoad('content')
+      })
+      .then(function () {
+        return ajaxLoad('footer')
+      })
+      .then(function () {
+        console.log(4)
+        $('span.item').html(' 아이템')
+      })
+
+
+    // var p_title = function () {
+    //   return ajaxLoad('title')
+    // }
+    // var p_content = function () {
+    //   return ajaxLoad('content')
+    // }
+    // var p_footer = function () {
+    //   return ajaxLoad('footer')
+    // }
+
+    // p_title()
+    //   .then(p_content)
+    //   .then(p_footer)
+    //   .then(function () {
+    //     console.log(4)
+    //     $('span.item').html(' 아이템')
+    //   })
+
+  </script>
+</body>
+
+</html>
