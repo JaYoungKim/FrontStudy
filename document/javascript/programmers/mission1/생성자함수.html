@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>생성자 함수</title>
+</head>
+
+<body>
+
+  <script>
+    // 사용자 정의 생성자 함수 https://yookeun.github.io/javascript/2015/03/08/javascript-construct/
+    // ex1)
+    /* var Person = function (name) {
+      this.name = name;
+      this.say = function () {
+        return "Hello, my name is " + this.name;
+      }
+    }
+
+    Person.prototype.getName = function () {
+      return this.name;
+    }
+
+    var p = new Person('kim');
+
+    console.log('p.say()', p.say());
+    console.log('p.getName()', p.getName());
+    */
+    // ex2)
+    /*var Person = function (name) {
+      this.name = name;
+      this.say = function () {
+        return "Hello, my name is " + this.name;
+      }
+
+      var that = {}
+      that.name = "Park";
+      return that;
+    }
+
+    var p = new Person('kim');
+    console.log('p.name', p.name);
+    */
+
+    // ex3)
+    /*   var Person = function () {
+        this.name = "kim"
+      }
+      var p = Person();
+  
+      console.log(p.name)
+      console.log(window.name) */
+
+    // ex5)
+
+    var Person = function (name) {
+      var that = {};
+      that.name = name;
+      return that;
+    }
+
+    var Person2 = function (name) {
+      return {
+        name: name
+      }
+    }
+
+    var Person3 = function (name) {
+      if (!(this instanceof Person3)) {
+        return new Person3(name);
+      }
+      this.name = name;
+    }
+
+    var p = Person('kim');
+    console.log('p', p.name);
+    var p1 = new Person('kim')
+    console.log('p1', p1.name);
+    var p2 = Person2('kim');
+    console.log('p2', p2.name)
+    var p3 = new Person2('kim');
+    console.log('p3', p3.name)
+    var p4 = Person3('kim');
+    console.log('p4', p4.name)
+
+
+
+  </script>
+</body>
+
+</html>

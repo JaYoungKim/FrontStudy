@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="todoList"></div>
+  <div id="todoList1"></div>
+  <div id="todoList2"></div>
+
+
+
+  <script>
+    const data = [
+      {
+        text: "js 공부하기",
+        isCompleted: true,
+      },
+      {
+        text: "js 복습하기",
+        isCompleted: false,
+      },
+    ]
+    const data1 = [
+      {
+        text: "js 공부하기1",
+        isCompleted: true,
+      },
+      {
+        text: "js 복습하기1",
+        isCompleted: false,
+      },
+    ]
+    const data2 = [
+      {
+        text: "js 공부하기2",
+        isCompleted: true,
+      },
+      {
+        text: "js 복습하기3",
+        isCompleted: false,
+      },
+    ]
+
+    const isNil = function (data) {
+      return data == null
+    }
+
+    function TodoList({ initialState, $target }) {
+      this.state = initialState;
+
+      this.validate = function (data) {
+        if (isNil(data)) throw new Error("데이터가 undefinded 이거나, null 입니다.")
+        else if (!Array.isArray(data)) throw new Error("데이터가 배열이 아닙니다.")
+      }
+
+      try {
+        this.validate(this.state);
+        if (!new.target) throw new Error("new 키워드가 없습니다.")
+      } catch (error) {
+        console.error(error);
+        return false;
+      }
+
+
+      this.setState = function (nextData) {
+        this.state = nextData;
+        this.render();
+      }
+
+      this.render = function () {
+        const $todoUL = document.createElement('ul');
+
+        $todoUL.innerHTML = this.state.map(function (data) {
+          return "<li>"
+            + (data.isCompleted === false ?
+              "<span><s>" + data.text + "</s></span>" :
+              "<span>" + data.text + "</span>")
+            + "</li>"
+        }).join('')
+
+        $target.appendChild($todoUL)
+      }
+
+      this.render();
+    }
+
+
+    const todoList = new TodoList({
+      initialState: data,
+      $target: document.querySelector("#todoList")
+    })
+    const todoList1 = new TodoList({
+      initialState: data1,
+      $target: document.querySelector("#todoList1")
+    })
+    const todoList2 = new TodoList({
+      initialState: data2,
+      $target: document.querySelector("#todoList2")
+    })
+
+    todoList2.setState([
+      ...data2,
+      {
+        text: '추가된것',
+      }
+    ])
+  </script>
+</body>
+
+</html>
