@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <main id="app"></main>
+
+
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+
+    var p_title = new Promise(function (resolve, rejected) { //ie 지원안함
+      return $.ajax({
+        url: "./include/title.html",
+        success: function (data) {
+          resolve(data);
+        }
+      })
+    })
+    /* .then(function (data) {
+      return new Promise(function (resolve, reject) {
+        $.ajax({
+          url: "./include/content.html",
+          success: function (data) {
+            resolve($('#app').append(data))
+          }
+        })
+      })
+    }) */
+    var p_content = new Promise(function (resolve, rejected) {
+      return $.ajax({
+        url: "./include/content.html",
+        success: function (data) {
+          resolve(data)
+        }
+      })
+    })
+    var p_footer = new Promise(function (resolve, rejected) {
+      return $.ajax({
+        url: "./include/footer.html",
+        success: function (data) {
+          resolve(data)
+        }
+      })
+    })
+
+    async function p() { //async ie 지원안함
+      console.log(0)
+      await p_title.then(function (data) {
+        $('#app').append(data);
+        console.log(1)
+        return p_content
+      }).then(function (data) {
+        $('#app').append(data);
+        console.log(2)
+        return p_footer
+      }).then(function (data) {
+        $('#app').append(data);
+        console.log(3)
+        return p_footer
+      }).then(function (data) {
+        console.log(4)
+        $('span.item').html(' 아이템')
+      })
+      console.log(5)
+    }
+
+    p()
+  </script>
+</body>
+
+</html>
