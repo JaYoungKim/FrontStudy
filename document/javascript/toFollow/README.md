@@ -88,6 +88,7 @@
 ## Function(함수)
 * [1대1 수업영상: 1코스 6강 function type](https://drive.google.com/drive/folders/1lmP5IAtLCBOHXz8PMjhfifgogGC1TEgb?usp=sharing)
 * [Javascript/ES6] [68. 함수 파라미터(매개변수) 기본값 설정하기](https://hianna.tistory.com/486?category=764998)
+*[함수](https://ko.javascript.info/function-basics#ref-349)
 
 
 ## Object(객체)
@@ -211,3 +212,9 @@
 ## ProtoType 
  * [ProtoType 정리](https://velog.io/@adam2/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-Prototype-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC)
  * [함수형프로그래밍 & 객체지향 프로그래밍 ] (https://mangsby.com/blog/programming/fp-vs-oop/)
+
+
+
+ ## 최종정리
+ 
+ * [자바스크립트 총괄 정리](https://blex.me/@baealex/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8javascript-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC)
