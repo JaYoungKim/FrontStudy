@@ -1,0 +1,37 @@
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: .3;
+  position: fixed;
+  transition: background-color .2s, width .2s, height .2s, box-shadow .2s;
+  transform-origin: center;
+  pointer-events: none;
+}
+
+.is-hover {
+  height: 48px;
+  width: 48px;
+  background-color: #fff55f;
+  opacity: .9
+}
+
+.is-hover:after {
+  content: "";
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' stroke='none'><path d='M8.91072 16.4909L8.91072 9.11232L15.9667 9.11232L15.9667 7.37856L8.91072 7.37856L8.91072 0L7.01568 0L7.01568 7.37856L0 7.37856L0 9.11232L7.01568 9.11232L7.01568 16.4909L8.91072 16.4909Z'></path></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+}
