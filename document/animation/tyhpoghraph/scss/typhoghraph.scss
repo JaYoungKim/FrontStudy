@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//--------------------------
+//  nth-trans-delay()
+//  @description: Transition Delay on nth-childs
+//  @param: $delay_items: [7]    - number of nth-of-type items to create
+//  @param: $delay_time:[1.5s]   - transition-dealy value
+//--------------------------
+@mixin nth-trans-delay($delay_items: 7, $delay_time: 0.2s) {
+  @for $i from 1 through $delay_items {
+    &:nth-child(#{$i}) {
+      transition-delay: $delay_time * $i;
+    }
+  }
+}
+
+//--------------------------
+//  nth-ani-delay()
+//  @description: Animation Delay on nth-childs
+//  @param: $delay_items: [7] - number of nth-of-type items to create
+//  @param: $delay_time:[1.5s] - transition-dealy value
+//  @param: $sub_dom:'' - 하위 DOM 적용
+//--------------------------
+@mixin nth-ani-delay($delay_items: 7, $delay_time: 0.2s, $sub_dom:'') {
+  @for $i from 1 through $delay_items {
+
+    &:nth-child(#{$i}) #{$sub_dom} {
+
+      animation-delay: $delay_time * $i;
+      z-index: $i;
+
+      &:after {
+        z-index: $i+1;
+      }
+    }
+  }
+}
+
+.typho-animation {
+  span {
+    animation: letter-glow 0.7s 0s ease both;
+    opacity: 0;
+    @include nth-ani-delay(180, .05s);
+  }
+}
+
+// Letter Glow
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1)
+  }
+
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9)
+  }
+
+  77% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.0)
+  }
+}

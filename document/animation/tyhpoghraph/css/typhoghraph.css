@@ -1,0 +1,1846 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.typho-animation span {
+  -webkit-animation: letter-glow 0.7s 0s ease both;
+          animation: letter-glow 0.7s 0s ease both;
+  opacity: 0;
+}
+
+.typho-animation span:nth-child(1) {
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  z-index: 1;
+}
+
+.typho-animation span:nth-child(1):after {
+  z-index: 2;
+}
+
+.typho-animation span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  z-index: 2;
+}
+
+.typho-animation span:nth-child(2):after {
+  z-index: 3;
+}
+
+.typho-animation span:nth-child(3) {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+  z-index: 3;
+}
+
+.typho-animation span:nth-child(3):after {
+  z-index: 4;
+}
+
+.typho-animation span:nth-child(4) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  z-index: 4;
+}
+
+.typho-animation span:nth-child(4):after {
+  z-index: 5;
+}
+
+.typho-animation span:nth-child(5) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  z-index: 5;
+}
+
+.typho-animation span:nth-child(5):after {
+  z-index: 6;
+}
+
+.typho-animation span:nth-child(6) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  z-index: 6;
+}
+
+.typho-animation span:nth-child(6):after {
+  z-index: 7;
+}
+
+.typho-animation span:nth-child(7) {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+  z-index: 7;
+}
+
+.typho-animation span:nth-child(7):after {
+  z-index: 8;
+}
+
+.typho-animation span:nth-child(8) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  z-index: 8;
+}
+
+.typho-animation span:nth-child(8):after {
+  z-index: 9;
+}
+
+.typho-animation span:nth-child(9) {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+  z-index: 9;
+}
+
+.typho-animation span:nth-child(9):after {
+  z-index: 10;
+}
+
+.typho-animation span:nth-child(10) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  z-index: 10;
+}
+
+.typho-animation span:nth-child(10):after {
+  z-index: 11;
+}
+
+.typho-animation span:nth-child(11) {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+  z-index: 11;
+}
+
+.typho-animation span:nth-child(11):after {
+  z-index: 12;
+}
+
+.typho-animation span:nth-child(12) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  z-index: 12;
+}
+
+.typho-animation span:nth-child(12):after {
+  z-index: 13;
+}
+
+.typho-animation span:nth-child(13) {
+  -webkit-animation-delay: 0.65s;
+          animation-delay: 0.65s;
+  z-index: 13;
+}
+
+.typho-animation span:nth-child(13):after {
+  z-index: 14;
+}
+
+.typho-animation span:nth-child(14) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+  z-index: 14;
+}
+
+.typho-animation span:nth-child(14):after {
+  z-index: 15;
+}
+
+.typho-animation span:nth-child(15) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  z-index: 15;
+}
+
+.typho-animation span:nth-child(15):after {
+  z-index: 16;
+}
+
+.typho-animation span:nth-child(16) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  z-index: 16;
+}
+
+.typho-animation span:nth-child(16):after {
+  z-index: 17;
+}
+
+.typho-animation span:nth-child(17) {
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+  z-index: 17;
+}
+
+.typho-animation span:nth-child(17):after {
+  z-index: 18;
+}
+
+.typho-animation span:nth-child(18) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  z-index: 18;
+}
+
+.typho-animation span:nth-child(18):after {
+  z-index: 19;
+}
+
+.typho-animation span:nth-child(19) {
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
+  z-index: 19;
+}
+
+.typho-animation span:nth-child(19):after {
+  z-index: 20;
+}
+
+.typho-animation span:nth-child(20) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  z-index: 20;
+}
+
+.typho-animation span:nth-child(20):after {
+  z-index: 21;
+}
+
+.typho-animation span:nth-child(21) {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+  z-index: 21;
+}
+
+.typho-animation span:nth-child(21):after {
+  z-index: 22;
+}
+
+.typho-animation span:nth-child(22) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+  z-index: 22;
+}
+
+.typho-animation span:nth-child(22):after {
+  z-index: 23;
+}
+
+.typho-animation span:nth-child(23) {
+  -webkit-animation-delay: 1.15s;
+          animation-delay: 1.15s;
+  z-index: 23;
+}
+
+.typho-animation span:nth-child(23):after {
+  z-index: 24;
+}
+
+.typho-animation span:nth-child(24) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  z-index: 24;
+}
+
+.typho-animation span:nth-child(24):after {
+  z-index: 25;
+}
+
+.typho-animation span:nth-child(25) {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+  z-index: 25;
+}
+
+.typho-animation span:nth-child(25):after {
+  z-index: 26;
+}
+
+.typho-animation span:nth-child(26) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  z-index: 26;
+}
+
+.typho-animation span:nth-child(26):after {
+  z-index: 27;
+}
+
+.typho-animation span:nth-child(27) {
+  -webkit-animation-delay: 1.35s;
+          animation-delay: 1.35s;
+  z-index: 27;
+}
+
+.typho-animation span:nth-child(27):after {
+  z-index: 28;
+}
+
+.typho-animation span:nth-child(28) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  z-index: 28;
+}
+
+.typho-animation span:nth-child(28):after {
+  z-index: 29;
+}
+
+.typho-animation span:nth-child(29) {
+  -webkit-animation-delay: 1.45s;
+          animation-delay: 1.45s;
+  z-index: 29;
+}
+
+.typho-animation span:nth-child(29):after {
+  z-index: 30;
+}
+
+.typho-animation span:nth-child(30) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  z-index: 30;
+}
+
+.typho-animation span:nth-child(30):after {
+  z-index: 31;
+}
+
+.typho-animation span:nth-child(31) {
+  -webkit-animation-delay: 1.55s;
+          animation-delay: 1.55s;
+  z-index: 31;
+}
+
+.typho-animation span:nth-child(31):after {
+  z-index: 32;
+}
+
+.typho-animation span:nth-child(32) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  z-index: 32;
+}
+
+.typho-animation span:nth-child(32):after {
+  z-index: 33;
+}
+
+.typho-animation span:nth-child(33) {
+  -webkit-animation-delay: 1.65s;
+          animation-delay: 1.65s;
+  z-index: 33;
+}
+
+.typho-animation span:nth-child(33):after {
+  z-index: 34;
+}
+
+.typho-animation span:nth-child(34) {
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+  z-index: 34;
+}
+
+.typho-animation span:nth-child(34):after {
+  z-index: 35;
+}
+
+.typho-animation span:nth-child(35) {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+  z-index: 35;
+}
+
+.typho-animation span:nth-child(35):after {
+  z-index: 36;
+}
+
+.typho-animation span:nth-child(36) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  z-index: 36;
+}
+
+.typho-animation span:nth-child(36):after {
+  z-index: 37;
+}
+
+.typho-animation span:nth-child(37) {
+  -webkit-animation-delay: 1.85s;
+          animation-delay: 1.85s;
+  z-index: 37;
+}
+
+.typho-animation span:nth-child(37):after {
+  z-index: 38;
+}
+
+.typho-animation span:nth-child(38) {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+  z-index: 38;
+}
+
+.typho-animation span:nth-child(38):after {
+  z-index: 39;
+}
+
+.typho-animation span:nth-child(39) {
+  -webkit-animation-delay: 1.95s;
+          animation-delay: 1.95s;
+  z-index: 39;
+}
+
+.typho-animation span:nth-child(39):after {
+  z-index: 40;
+}
+
+.typho-animation span:nth-child(40) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  z-index: 40;
+}
+
+.typho-animation span:nth-child(40):after {
+  z-index: 41;
+}
+
+.typho-animation span:nth-child(41) {
+  -webkit-animation-delay: 2.05s;
+          animation-delay: 2.05s;
+  z-index: 41;
+}
+
+.typho-animation span:nth-child(41):after {
+  z-index: 42;
+}
+
+.typho-animation span:nth-child(42) {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+  z-index: 42;
+}
+
+.typho-animation span:nth-child(42):after {
+  z-index: 43;
+}
+
+.typho-animation span:nth-child(43) {
+  -webkit-animation-delay: 2.15s;
+          animation-delay: 2.15s;
+  z-index: 43;
+}
+
+.typho-animation span:nth-child(43):after {
+  z-index: 44;
+}
+
+.typho-animation span:nth-child(44) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  z-index: 44;
+}
+
+.typho-animation span:nth-child(44):after {
+  z-index: 45;
+}
+
+.typho-animation span:nth-child(45) {
+  -webkit-animation-delay: 2.25s;
+          animation-delay: 2.25s;
+  z-index: 45;
+}
+
+.typho-animation span:nth-child(45):after {
+  z-index: 46;
+}
+
+.typho-animation span:nth-child(46) {
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+  z-index: 46;
+}
+
+.typho-animation span:nth-child(46):after {
+  z-index: 47;
+}
+
+.typho-animation span:nth-child(47) {
+  -webkit-animation-delay: 2.35s;
+          animation-delay: 2.35s;
+  z-index: 47;
+}
+
+.typho-animation span:nth-child(47):after {
+  z-index: 48;
+}
+
+.typho-animation span:nth-child(48) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+  z-index: 48;
+}
+
+.typho-animation span:nth-child(48):after {
+  z-index: 49;
+}
+
+.typho-animation span:nth-child(49) {
+  -webkit-animation-delay: 2.45s;
+          animation-delay: 2.45s;
+  z-index: 49;
+}
+
+.typho-animation span:nth-child(49):after {
+  z-index: 50;
+}
+
+.typho-animation span:nth-child(50) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  z-index: 50;
+}
+
+.typho-animation span:nth-child(50):after {
+  z-index: 51;
+}
+
+.typho-animation span:nth-child(51) {
+  -webkit-animation-delay: 2.55s;
+          animation-delay: 2.55s;
+  z-index: 51;
+}
+
+.typho-animation span:nth-child(51):after {
+  z-index: 52;
+}
+
+.typho-animation span:nth-child(52) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+  z-index: 52;
+}
+
+.typho-animation span:nth-child(52):after {
+  z-index: 53;
+}
+
+.typho-animation span:nth-child(53) {
+  -webkit-animation-delay: 2.65s;
+          animation-delay: 2.65s;
+  z-index: 53;
+}
+
+.typho-animation span:nth-child(53):after {
+  z-index: 54;
+}
+
+.typho-animation span:nth-child(54) {
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+  z-index: 54;
+}
+
+.typho-animation span:nth-child(54):after {
+  z-index: 55;
+}
+
+.typho-animation span:nth-child(55) {
+  -webkit-animation-delay: 2.75s;
+          animation-delay: 2.75s;
+  z-index: 55;
+}
+
+.typho-animation span:nth-child(55):after {
+  z-index: 56;
+}
+
+.typho-animation span:nth-child(56) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  z-index: 56;
+}
+
+.typho-animation span:nth-child(56):after {
+  z-index: 57;
+}
+
+.typho-animation span:nth-child(57) {
+  -webkit-animation-delay: 2.85s;
+          animation-delay: 2.85s;
+  z-index: 57;
+}
+
+.typho-animation span:nth-child(57):after {
+  z-index: 58;
+}
+
+.typho-animation span:nth-child(58) {
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+  z-index: 58;
+}
+
+.typho-animation span:nth-child(58):after {
+  z-index: 59;
+}
+
+.typho-animation span:nth-child(59) {
+  -webkit-animation-delay: 2.95s;
+          animation-delay: 2.95s;
+  z-index: 59;
+}
+
+.typho-animation span:nth-child(59):after {
+  z-index: 60;
+}
+
+.typho-animation span:nth-child(60) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  z-index: 60;
+}
+
+.typho-animation span:nth-child(60):after {
+  z-index: 61;
+}
+
+.typho-animation span:nth-child(61) {
+  -webkit-animation-delay: 3.05s;
+          animation-delay: 3.05s;
+  z-index: 61;
+}
+
+.typho-animation span:nth-child(61):after {
+  z-index: 62;
+}
+
+.typho-animation span:nth-child(62) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+  z-index: 62;
+}
+
+.typho-animation span:nth-child(62):after {
+  z-index: 63;
+}
+
+.typho-animation span:nth-child(63) {
+  -webkit-animation-delay: 3.15s;
+          animation-delay: 3.15s;
+  z-index: 63;
+}
+
+.typho-animation span:nth-child(63):after {
+  z-index: 64;
+}
+
+.typho-animation span:nth-child(64) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+  z-index: 64;
+}
+
+.typho-animation span:nth-child(64):after {
+  z-index: 65;
+}
+
+.typho-animation span:nth-child(65) {
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s;
+  z-index: 65;
+}
+
+.typho-animation span:nth-child(65):after {
+  z-index: 66;
+}
+
+.typho-animation span:nth-child(66) {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+  z-index: 66;
+}
+
+.typho-animation span:nth-child(66):after {
+  z-index: 67;
+}
+
+.typho-animation span:nth-child(67) {
+  -webkit-animation-delay: 3.35s;
+          animation-delay: 3.35s;
+  z-index: 67;
+}
+
+.typho-animation span:nth-child(67):after {
+  z-index: 68;
+}
+
+.typho-animation span:nth-child(68) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+  z-index: 68;
+}
+
+.typho-animation span:nth-child(68):after {
+  z-index: 69;
+}
+
+.typho-animation span:nth-child(69) {
+  -webkit-animation-delay: 3.45s;
+          animation-delay: 3.45s;
+  z-index: 69;
+}
+
+.typho-animation span:nth-child(69):after {
+  z-index: 70;
+}
+
+.typho-animation span:nth-child(70) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  z-index: 70;
+}
+
+.typho-animation span:nth-child(70):after {
+  z-index: 71;
+}
+
+.typho-animation span:nth-child(71) {
+  -webkit-animation-delay: 3.55s;
+          animation-delay: 3.55s;
+  z-index: 71;
+}
+
+.typho-animation span:nth-child(71):after {
+  z-index: 72;
+}
+
+.typho-animation span:nth-child(72) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+  z-index: 72;
+}
+
+.typho-animation span:nth-child(72):after {
+  z-index: 73;
+}
+
+.typho-animation span:nth-child(73) {
+  -webkit-animation-delay: 3.65s;
+          animation-delay: 3.65s;
+  z-index: 73;
+}
+
+.typho-animation span:nth-child(73):after {
+  z-index: 74;
+}
+
+.typho-animation span:nth-child(74) {
+  -webkit-animation-delay: 3.7s;
+          animation-delay: 3.7s;
+  z-index: 74;
+}
+
+.typho-animation span:nth-child(74):after {
+  z-index: 75;
+}
+
+.typho-animation span:nth-child(75) {
+  -webkit-animation-delay: 3.75s;
+          animation-delay: 3.75s;
+  z-index: 75;
+}
+
+.typho-animation span:nth-child(75):after {
+  z-index: 76;
+}
+
+.typho-animation span:nth-child(76) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+  z-index: 76;
+}
+
+.typho-animation span:nth-child(76):after {
+  z-index: 77;
+}
+
+.typho-animation span:nth-child(77) {
+  -webkit-animation-delay: 3.85s;
+          animation-delay: 3.85s;
+  z-index: 77;
+}
+
+.typho-animation span:nth-child(77):after {
+  z-index: 78;
+}
+
+.typho-animation span:nth-child(78) {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+  z-index: 78;
+}
+
+.typho-animation span:nth-child(78):after {
+  z-index: 79;
+}
+
+.typho-animation span:nth-child(79) {
+  -webkit-animation-delay: 3.95s;
+          animation-delay: 3.95s;
+  z-index: 79;
+}
+
+.typho-animation span:nth-child(79):after {
+  z-index: 80;
+}
+
+.typho-animation span:nth-child(80) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  z-index: 80;
+}
+
+.typho-animation span:nth-child(80):after {
+  z-index: 81;
+}
+
+.typho-animation span:nth-child(81) {
+  -webkit-animation-delay: 4.05s;
+          animation-delay: 4.05s;
+  z-index: 81;
+}
+
+.typho-animation span:nth-child(81):after {
+  z-index: 82;
+}
+
+.typho-animation span:nth-child(82) {
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+  z-index: 82;
+}
+
+.typho-animation span:nth-child(82):after {
+  z-index: 83;
+}
+
+.typho-animation span:nth-child(83) {
+  -webkit-animation-delay: 4.15s;
+          animation-delay: 4.15s;
+  z-index: 83;
+}
+
+.typho-animation span:nth-child(83):after {
+  z-index: 84;
+}
+
+.typho-animation span:nth-child(84) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+  z-index: 84;
+}
+
+.typho-animation span:nth-child(84):after {
+  z-index: 85;
+}
+
+.typho-animation span:nth-child(85) {
+  -webkit-animation-delay: 4.25s;
+          animation-delay: 4.25s;
+  z-index: 85;
+}
+
+.typho-animation span:nth-child(85):after {
+  z-index: 86;
+}
+
+.typho-animation span:nth-child(86) {
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+  z-index: 86;
+}
+
+.typho-animation span:nth-child(86):after {
+  z-index: 87;
+}
+
+.typho-animation span:nth-child(87) {
+  -webkit-animation-delay: 4.35s;
+          animation-delay: 4.35s;
+  z-index: 87;
+}
+
+.typho-animation span:nth-child(87):after {
+  z-index: 88;
+}
+
+.typho-animation span:nth-child(88) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+  z-index: 88;
+}
+
+.typho-animation span:nth-child(88):after {
+  z-index: 89;
+}
+
+.typho-animation span:nth-child(89) {
+  -webkit-animation-delay: 4.45s;
+          animation-delay: 4.45s;
+  z-index: 89;
+}
+
+.typho-animation span:nth-child(89):after {
+  z-index: 90;
+}
+
+.typho-animation span:nth-child(90) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+  z-index: 90;
+}
+
+.typho-animation span:nth-child(90):after {
+  z-index: 91;
+}
+
+.typho-animation span:nth-child(91) {
+  -webkit-animation-delay: 4.55s;
+          animation-delay: 4.55s;
+  z-index: 91;
+}
+
+.typho-animation span:nth-child(91):after {
+  z-index: 92;
+}
+
+.typho-animation span:nth-child(92) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+  z-index: 92;
+}
+
+.typho-animation span:nth-child(92):after {
+  z-index: 93;
+}
+
+.typho-animation span:nth-child(93) {
+  -webkit-animation-delay: 4.65s;
+          animation-delay: 4.65s;
+  z-index: 93;
+}
+
+.typho-animation span:nth-child(93):after {
+  z-index: 94;
+}
+
+.typho-animation span:nth-child(94) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+  z-index: 94;
+}
+
+.typho-animation span:nth-child(94):after {
+  z-index: 95;
+}
+
+.typho-animation span:nth-child(95) {
+  -webkit-animation-delay: 4.75s;
+          animation-delay: 4.75s;
+  z-index: 95;
+}
+
+.typho-animation span:nth-child(95):after {
+  z-index: 96;
+}
+
+.typho-animation span:nth-child(96) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+  z-index: 96;
+}
+
+.typho-animation span:nth-child(96):after {
+  z-index: 97;
+}
+
+.typho-animation span:nth-child(97) {
+  -webkit-animation-delay: 4.85s;
+          animation-delay: 4.85s;
+  z-index: 97;
+}
+
+.typho-animation span:nth-child(97):after {
+  z-index: 98;
+}
+
+.typho-animation span:nth-child(98) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+  z-index: 98;
+}
+
+.typho-animation span:nth-child(98):after {
+  z-index: 99;
+}
+
+.typho-animation span:nth-child(99) {
+  -webkit-animation-delay: 4.95s;
+          animation-delay: 4.95s;
+  z-index: 99;
+}
+
+.typho-animation span:nth-child(99):after {
+  z-index: 100;
+}
+
+.typho-animation span:nth-child(100) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  z-index: 100;
+}
+
+.typho-animation span:nth-child(100):after {
+  z-index: 101;
+}
+
+.typho-animation span:nth-child(101) {
+  -webkit-animation-delay: 5.05s;
+          animation-delay: 5.05s;
+  z-index: 101;
+}
+
+.typho-animation span:nth-child(101):after {
+  z-index: 102;
+}
+
+.typho-animation span:nth-child(102) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+  z-index: 102;
+}
+
+.typho-animation span:nth-child(102):after {
+  z-index: 103;
+}
+
+.typho-animation span:nth-child(103) {
+  -webkit-animation-delay: 5.15s;
+          animation-delay: 5.15s;
+  z-index: 103;
+}
+
+.typho-animation span:nth-child(103):after {
+  z-index: 104;
+}
+
+.typho-animation span:nth-child(104) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+  z-index: 104;
+}
+
+.typho-animation span:nth-child(104):after {
+  z-index: 105;
+}
+
+.typho-animation span:nth-child(105) {
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+  z-index: 105;
+}
+
+.typho-animation span:nth-child(105):after {
+  z-index: 106;
+}
+
+.typho-animation span:nth-child(106) {
+  -webkit-animation-delay: 5.3s;
+          animation-delay: 5.3s;
+  z-index: 106;
+}
+
+.typho-animation span:nth-child(106):after {
+  z-index: 107;
+}
+
+.typho-animation span:nth-child(107) {
+  -webkit-animation-delay: 5.35s;
+          animation-delay: 5.35s;
+  z-index: 107;
+}
+
+.typho-animation span:nth-child(107):after {
+  z-index: 108;
+}
+
+.typho-animation span:nth-child(108) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+  z-index: 108;
+}
+
+.typho-animation span:nth-child(108):after {
+  z-index: 109;
+}
+
+.typho-animation span:nth-child(109) {
+  -webkit-animation-delay: 5.45s;
+          animation-delay: 5.45s;
+  z-index: 109;
+}
+
+.typho-animation span:nth-child(109):after {
+  z-index: 110;
+}
+
+.typho-animation span:nth-child(110) {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  z-index: 110;
+}
+
+.typho-animation span:nth-child(110):after {
+  z-index: 111;
+}
+
+.typho-animation span:nth-child(111) {
+  -webkit-animation-delay: 5.55s;
+          animation-delay: 5.55s;
+  z-index: 111;
+}
+
+.typho-animation span:nth-child(111):after {
+  z-index: 112;
+}
+
+.typho-animation span:nth-child(112) {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+  z-index: 112;
+}
+
+.typho-animation span:nth-child(112):after {
+  z-index: 113;
+}
+
+.typho-animation span:nth-child(113) {
+  -webkit-animation-delay: 5.65s;
+          animation-delay: 5.65s;
+  z-index: 113;
+}
+
+.typho-animation span:nth-child(113):after {
+  z-index: 114;
+}
+
+.typho-animation span:nth-child(114) {
+  -webkit-animation-delay: 5.7s;
+          animation-delay: 5.7s;
+  z-index: 114;
+}
+
+.typho-animation span:nth-child(114):after {
+  z-index: 115;
+}
+
+.typho-animation span:nth-child(115) {
+  -webkit-animation-delay: 5.75s;
+          animation-delay: 5.75s;
+  z-index: 115;
+}
+
+.typho-animation span:nth-child(115):after {
+  z-index: 116;
+}
+
+.typho-animation span:nth-child(116) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+  z-index: 116;
+}
+
+.typho-animation span:nth-child(116):after {
+  z-index: 117;
+}
+
+.typho-animation span:nth-child(117) {
+  -webkit-animation-delay: 5.85s;
+          animation-delay: 5.85s;
+  z-index: 117;
+}
+
+.typho-animation span:nth-child(117):after {
+  z-index: 118;
+}
+
+.typho-animation span:nth-child(118) {
+  -webkit-animation-delay: 5.9s;
+          animation-delay: 5.9s;
+  z-index: 118;
+}
+
+.typho-animation span:nth-child(118):after {
+  z-index: 119;
+}
+
+.typho-animation span:nth-child(119) {
+  -webkit-animation-delay: 5.95s;
+          animation-delay: 5.95s;
+  z-index: 119;
+}
+
+.typho-animation span:nth-child(119):after {
+  z-index: 120;
+}
+
+.typho-animation span:nth-child(120) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  z-index: 120;
+}
+
+.typho-animation span:nth-child(120):after {
+  z-index: 121;
+}
+
+.typho-animation span:nth-child(121) {
+  -webkit-animation-delay: 6.05s;
+          animation-delay: 6.05s;
+  z-index: 121;
+}
+
+.typho-animation span:nth-child(121):after {
+  z-index: 122;
+}
+
+.typho-animation span:nth-child(122) {
+  -webkit-animation-delay: 6.1s;
+          animation-delay: 6.1s;
+  z-index: 122;
+}
+
+.typho-animation span:nth-child(122):after {
+  z-index: 123;
+}
+
+.typho-animation span:nth-child(123) {
+  -webkit-animation-delay: 6.15s;
+          animation-delay: 6.15s;
+  z-index: 123;
+}
+
+.typho-animation span:nth-child(123):after {
+  z-index: 124;
+}
+
+.typho-animation span:nth-child(124) {
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+  z-index: 124;
+}
+
+.typho-animation span:nth-child(124):after {
+  z-index: 125;
+}
+
+.typho-animation span:nth-child(125) {
+  -webkit-animation-delay: 6.25s;
+          animation-delay: 6.25s;
+  z-index: 125;
+}
+
+.typho-animation span:nth-child(125):after {
+  z-index: 126;
+}
+
+.typho-animation span:nth-child(126) {
+  -webkit-animation-delay: 6.3s;
+          animation-delay: 6.3s;
+  z-index: 126;
+}
+
+.typho-animation span:nth-child(126):after {
+  z-index: 127;
+}
+
+.typho-animation span:nth-child(127) {
+  -webkit-animation-delay: 6.35s;
+          animation-delay: 6.35s;
+  z-index: 127;
+}
+
+.typho-animation span:nth-child(127):after {
+  z-index: 128;
+}
+
+.typho-animation span:nth-child(128) {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+  z-index: 128;
+}
+
+.typho-animation span:nth-child(128):after {
+  z-index: 129;
+}
+
+.typho-animation span:nth-child(129) {
+  -webkit-animation-delay: 6.45s;
+          animation-delay: 6.45s;
+  z-index: 129;
+}
+
+.typho-animation span:nth-child(129):after {
+  z-index: 130;
+}
+
+.typho-animation span:nth-child(130) {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+  z-index: 130;
+}
+
+.typho-animation span:nth-child(130):after {
+  z-index: 131;
+}
+
+.typho-animation span:nth-child(131) {
+  -webkit-animation-delay: 6.55s;
+          animation-delay: 6.55s;
+  z-index: 131;
+}
+
+.typho-animation span:nth-child(131):after {
+  z-index: 132;
+}
+
+.typho-animation span:nth-child(132) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+  z-index: 132;
+}
+
+.typho-animation span:nth-child(132):after {
+  z-index: 133;
+}
+
+.typho-animation span:nth-child(133) {
+  -webkit-animation-delay: 6.65s;
+          animation-delay: 6.65s;
+  z-index: 133;
+}
+
+.typho-animation span:nth-child(133):after {
+  z-index: 134;
+}
+
+.typho-animation span:nth-child(134) {
+  -webkit-animation-delay: 6.7s;
+          animation-delay: 6.7s;
+  z-index: 134;
+}
+
+.typho-animation span:nth-child(134):after {
+  z-index: 135;
+}
+
+.typho-animation span:nth-child(135) {
+  -webkit-animation-delay: 6.75s;
+          animation-delay: 6.75s;
+  z-index: 135;
+}
+
+.typho-animation span:nth-child(135):after {
+  z-index: 136;
+}
+
+.typho-animation span:nth-child(136) {
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+  z-index: 136;
+}
+
+.typho-animation span:nth-child(136):after {
+  z-index: 137;
+}
+
+.typho-animation span:nth-child(137) {
+  -webkit-animation-delay: 6.85s;
+          animation-delay: 6.85s;
+  z-index: 137;
+}
+
+.typho-animation span:nth-child(137):after {
+  z-index: 138;
+}
+
+.typho-animation span:nth-child(138) {
+  -webkit-animation-delay: 6.9s;
+          animation-delay: 6.9s;
+  z-index: 138;
+}
+
+.typho-animation span:nth-child(138):after {
+  z-index: 139;
+}
+
+.typho-animation span:nth-child(139) {
+  -webkit-animation-delay: 6.95s;
+          animation-delay: 6.95s;
+  z-index: 139;
+}
+
+.typho-animation span:nth-child(139):after {
+  z-index: 140;
+}
+
+.typho-animation span:nth-child(140) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  z-index: 140;
+}
+
+.typho-animation span:nth-child(140):after {
+  z-index: 141;
+}
+
+.typho-animation span:nth-child(141) {
+  -webkit-animation-delay: 7.05s;
+          animation-delay: 7.05s;
+  z-index: 141;
+}
+
+.typho-animation span:nth-child(141):after {
+  z-index: 142;
+}
+
+.typho-animation span:nth-child(142) {
+  -webkit-animation-delay: 7.1s;
+          animation-delay: 7.1s;
+  z-index: 142;
+}
+
+.typho-animation span:nth-child(142):after {
+  z-index: 143;
+}
+
+.typho-animation span:nth-child(143) {
+  -webkit-animation-delay: 7.15s;
+          animation-delay: 7.15s;
+  z-index: 143;
+}
+
+.typho-animation span:nth-child(143):after {
+  z-index: 144;
+}
+
+.typho-animation span:nth-child(144) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+  z-index: 144;
+}
+
+.typho-animation span:nth-child(144):after {
+  z-index: 145;
+}
+
+.typho-animation span:nth-child(145) {
+  -webkit-animation-delay: 7.25s;
+          animation-delay: 7.25s;
+  z-index: 145;
+}
+
+.typho-animation span:nth-child(145):after {
+  z-index: 146;
+}
+
+.typho-animation span:nth-child(146) {
+  -webkit-animation-delay: 7.3s;
+          animation-delay: 7.3s;
+  z-index: 146;
+}
+
+.typho-animation span:nth-child(146):after {
+  z-index: 147;
+}
+
+.typho-animation span:nth-child(147) {
+  -webkit-animation-delay: 7.35s;
+          animation-delay: 7.35s;
+  z-index: 147;
+}
+
+.typho-animation span:nth-child(147):after {
+  z-index: 148;
+}
+
+.typho-animation span:nth-child(148) {
+  -webkit-animation-delay: 7.4s;
+          animation-delay: 7.4s;
+  z-index: 148;
+}
+
+.typho-animation span:nth-child(148):after {
+  z-index: 149;
+}
+
+.typho-animation span:nth-child(149) {
+  -webkit-animation-delay: 7.45s;
+          animation-delay: 7.45s;
+  z-index: 149;
+}
+
+.typho-animation span:nth-child(149):after {
+  z-index: 150;
+}
+
+.typho-animation span:nth-child(150) {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+  z-index: 150;
+}
+
+.typho-animation span:nth-child(150):after {
+  z-index: 151;
+}
+
+.typho-animation span:nth-child(151) {
+  -webkit-animation-delay: 7.55s;
+          animation-delay: 7.55s;
+  z-index: 151;
+}
+
+.typho-animation span:nth-child(151):after {
+  z-index: 152;
+}
+
+.typho-animation span:nth-child(152) {
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+  z-index: 152;
+}
+
+.typho-animation span:nth-child(152):after {
+  z-index: 153;
+}
+
+.typho-animation span:nth-child(153) {
+  -webkit-animation-delay: 7.65s;
+          animation-delay: 7.65s;
+  z-index: 153;
+}
+
+.typho-animation span:nth-child(153):after {
+  z-index: 154;
+}
+
+.typho-animation span:nth-child(154) {
+  -webkit-animation-delay: 7.7s;
+          animation-delay: 7.7s;
+  z-index: 154;
+}
+
+.typho-animation span:nth-child(154):after {
+  z-index: 155;
+}
+
+.typho-animation span:nth-child(155) {
+  -webkit-animation-delay: 7.75s;
+          animation-delay: 7.75s;
+  z-index: 155;
+}
+
+.typho-animation span:nth-child(155):after {
+  z-index: 156;
+}
+
+.typho-animation span:nth-child(156) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+  z-index: 156;
+}
+
+.typho-animation span:nth-child(156):after {
+  z-index: 157;
+}
+
+.typho-animation span:nth-child(157) {
+  -webkit-animation-delay: 7.85s;
+          animation-delay: 7.85s;
+  z-index: 157;
+}
+
+.typho-animation span:nth-child(157):after {
+  z-index: 158;
+}
+
+.typho-animation span:nth-child(158) {
+  -webkit-animation-delay: 7.9s;
+          animation-delay: 7.9s;
+  z-index: 158;
+}
+
+.typho-animation span:nth-child(158):after {
+  z-index: 159;
+}
+
+.typho-animation span:nth-child(159) {
+  -webkit-animation-delay: 7.95s;
+          animation-delay: 7.95s;
+  z-index: 159;
+}
+
+.typho-animation span:nth-child(159):after {
+  z-index: 160;
+}
+
+.typho-animation span:nth-child(160) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  z-index: 160;
+}
+
+.typho-animation span:nth-child(160):after {
+  z-index: 161;
+}
+
+.typho-animation span:nth-child(161) {
+  -webkit-animation-delay: 8.05s;
+          animation-delay: 8.05s;
+  z-index: 161;
+}
+
+.typho-animation span:nth-child(161):after {
+  z-index: 162;
+}
+
+.typho-animation span:nth-child(162) {
+  -webkit-animation-delay: 8.1s;
+          animation-delay: 8.1s;
+  z-index: 162;
+}
+
+.typho-animation span:nth-child(162):after {
+  z-index: 163;
+}
+
+.typho-animation span:nth-child(163) {
+  -webkit-animation-delay: 8.15s;
+          animation-delay: 8.15s;
+  z-index: 163;
+}
+
+.typho-animation span:nth-child(163):after {
+  z-index: 164;
+}
+
+.typho-animation span:nth-child(164) {
+  -webkit-animation-delay: 8.2s;
+          animation-delay: 8.2s;
+  z-index: 164;
+}
+
+.typho-animation span:nth-child(164):after {
+  z-index: 165;
+}
+
+.typho-animation span:nth-child(165) {
+  -webkit-animation-delay: 8.25s;
+          animation-delay: 8.25s;
+  z-index: 165;
+}
+
+.typho-animation span:nth-child(165):after {
+  z-index: 166;
+}
+
+.typho-animation span:nth-child(166) {
+  -webkit-animation-delay: 8.3s;
+          animation-delay: 8.3s;
+  z-index: 166;
+}
+
+.typho-animation span:nth-child(166):after {
+  z-index: 167;
+}
+
+.typho-animation span:nth-child(167) {
+  -webkit-animation-delay: 8.35s;
+          animation-delay: 8.35s;
+  z-index: 167;
+}
+
+.typho-animation span:nth-child(167):after {
+  z-index: 168;
+}
+
+.typho-animation span:nth-child(168) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+  z-index: 168;
+}
+
+.typho-animation span:nth-child(168):after {
+  z-index: 169;
+}
+
+.typho-animation span:nth-child(169) {
+  -webkit-animation-delay: 8.45s;
+          animation-delay: 8.45s;
+  z-index: 169;
+}
+
+.typho-animation span:nth-child(169):after {
+  z-index: 170;
+}
+
+.typho-animation span:nth-child(170) {
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+  z-index: 170;
+}
+
+.typho-animation span:nth-child(170):after {
+  z-index: 171;
+}
+
+.typho-animation span:nth-child(171) {
+  -webkit-animation-delay: 8.55s;
+          animation-delay: 8.55s;
+  z-index: 171;
+}
+
+.typho-animation span:nth-child(171):after {
+  z-index: 172;
+}
+
+.typho-animation span:nth-child(172) {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+  z-index: 172;
+}
+
+.typho-animation span:nth-child(172):after {
+  z-index: 173;
+}
+
+.typho-animation span:nth-child(173) {
+  -webkit-animation-delay: 8.65s;
+          animation-delay: 8.65s;
+  z-index: 173;
+}
+
+.typho-animation span:nth-child(173):after {
+  z-index: 174;
+}
+
+.typho-animation span:nth-child(174) {
+  -webkit-animation-delay: 8.7s;
+          animation-delay: 8.7s;
+  z-index: 174;
+}
+
+.typho-animation span:nth-child(174):after {
+  z-index: 175;
+}
+
+.typho-animation span:nth-child(175) {
+  -webkit-animation-delay: 8.75s;
+          animation-delay: 8.75s;
+  z-index: 175;
+}
+
+.typho-animation span:nth-child(175):after {
+  z-index: 176;
+}
+
+.typho-animation span:nth-child(176) {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+  z-index: 176;
+}
+
+.typho-animation span:nth-child(176):after {
+  z-index: 177;
+}
+
+.typho-animation span:nth-child(177) {
+  -webkit-animation-delay: 8.85s;
+          animation-delay: 8.85s;
+  z-index: 177;
+}
+
+.typho-animation span:nth-child(177):after {
+  z-index: 178;
+}
+
+.typho-animation span:nth-child(178) {
+  -webkit-animation-delay: 8.9s;
+          animation-delay: 8.9s;
+  z-index: 178;
+}
+
+.typho-animation span:nth-child(178):after {
+  z-index: 179;
+}
+
+.typho-animation span:nth-child(179) {
+  -webkit-animation-delay: 8.95s;
+          animation-delay: 8.95s;
+  z-index: 179;
+}
+
+.typho-animation span:nth-child(179):after {
+  z-index: 180;
+}
+
+.typho-animation span:nth-child(180) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+  z-index: 180;
+}
+
+.typho-animation span:nth-child(180):after {
+  z-index: 181;
+}
+
+@-webkit-keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}

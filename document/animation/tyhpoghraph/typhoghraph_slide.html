@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/typhoghraph_slide.css">
+</head>
+
+<body>
+
+  <h2 class="typho-animation">
+    Brilliant
+    Revelation
+    Only for you
+  </h2>
+  <script>
+
+    const splitLetters = {
+      settings: {
+        words: document.querySelectorAll('.typho-animation'),
+      },
+      init: function () {
+        this.bindEvents();
+        this.bindSize();
+      },
+      bindEvents: function () {
+        this.settings.words.forEach(el => {
+          // var regex = / /gi; //공백 제거
+          // let letters = el.textContent.replace(regex, '').split("");
+          let letters = el.textContent.split("");
+          if (letters[0] === '\n') letters.shift(); // 처음 br 제거
+          el.textContent = "";
+          letters.forEach((letter, index) => {
+            let pDom = document.createElement("p");
+            let spanDom = document.createElement("span");
+            let brDom = document.createElement("br");
+            if (letter === '\n') {
+              el.append(brDom);
+            } else {
+              spanDom.textContent = letter;
+              spanDom.classList.add('typho-span');
+              pDom.classList.add('typho-p');
+              pDom.append(spanDom);
+              el.append(pDom);
+            }
+          })
+        });
+      },
+      bindSize: function () {
+        const words_span = document.querySelectorAll('.typho-animation > p > span');
+        words_span.forEach(span => {
+          let spanWidth, spanHeight
+          span.offsetWidth !== 0 ? spanWidth = span.offsetWidth : spanWidth = 8;
+          span.style.width = spanWidth + 'px'
+          span.parentElement.style.width = spanWidth + 'px'
+          span.parentElement.style.height = span.offsetHeight + 'px'
+        })
+      }
+    };
+    splitLetters.init();
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/typhoghraph.css">
+</head>
+
+<body>
+
+  <h2 class="typho-animation">
+    Brilliant
+    Revelation
+    Only for you
+  </h2>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    // (function ($) {
+    //   var s,
+    //     spanizeLetters = {
+    //       settings: {
+    //         letters: $('.typho-animation'),
+    //       },
+    //       init: function () {
+    //         s = this.settings;
+    //         this.bindEvents();
+    //       },
+    //       bindEvents: function () {
+    //         s.letters.html(function (i, el) {
+    //           //spanizeLetters.joinChars();
+    //           var spanizer = $.trim(el).split("");
+    //           console.log(spanizer)
+    //           return '<span>' + spanizer.join('</span><span>') + '</span>';
+    //         });
+    //       },
+    //     };
+    //   spanizeLetters.init();
+    // })(jQuery);
+
+    var s,
+      spanizeLetters = {
+        settings: {
+          words: document.querySelectorAll('.typho-animation'),
+        },
+        init: function () {
+          s = this.settings;
+          this.bindEvents();
+        },
+        bindEvents: function () {
+          s.words.forEach(el => {
+            let letters = el.textContent.split("");
+            if (letters[0] === '\n') letters.shift(); // 처음 br 제거
+            el.textContent = "";
+            letters.forEach((letter, index) => {
+              let spanDom = document.createElement("span");
+              let brDom = document.createElement("br");
+              if (letter === '\n') {
+                el.append(brDom);
+              } else {
+                spanDom.textContent = letter;
+                el.append(spanDom);
+              }
+            })
+          });
+        },
+      };
+    spanizeLetters.init();
+  </script>
+</body>
+
+</html>

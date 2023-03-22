@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//--------------------------
+//  nth-ani-delay()
+//  @description: Animation Delay on nth-childs
+//  @param: $delay_items: [7] - number of nth-of-type items to create
+//  @param: $delay_time:[1.5s] - transition-dealy value
+//  @param: $sub_dom:'' - 하위 DOM 적용
+//--------------------------
+@mixin nth-ani-delay($delay_items: 7, $delay_time: 0.2s, $sub_dom:'') {
+  @for $i from 1 through $delay_items {
+
+    &:nth-child(#{$i}) #{$sub_dom} {
+
+      animation-delay: $delay_time * $i;
+      z-index: $i;
+
+      &:after {
+        z-index: $i+1;
+      }
+    }
+  }
+}
+
+
+.typho-animation {
+  text-align: center;
+
+  p {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    @include nth-ani-delay(45, .05s, 'span');
+
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      text-align: center;
+      opacity: 0;
+      animation: letter-slide 0.7s 0s both;
+    }
+  }
+}
+
+@keyframes letter-slide {
+  0% {
+    opacity: 0;
+    top: 100%;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
