@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마우스 움직임</title>
+  <style>
+    .cursor {
+      position: fixed;
+      width: 160px;
+      height: 160px;
+      background: url('butterfly.gif') no-repeat;
+      background-position: 0 0;
+      background-size: 100% 100%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    const cursor = document.createElement('div');
+    cursor.className = 'cursor';
+    const body = document.querySelector('body');
+    body.appendChild(cursor)
+
+    let x = 0, y = 0;
+    let targetX = 0, targetY = 0;
+    const speed = 0.03;
+    document.addEventListener(
+      'click', function (e) {
+        x = e.pageX, y = e.pageY;
+        loop();
+      }
+    )
+
+    const loop = () => {
+      targetX += (x - targetX) * speed;
+      targetY += (y - targetY) * speed;
+      console.log(targetX, targetY);
+      cursor.style.left = targetX + 'px';
+      cursor.style.top = targetY + 'px';
+      window.requestAnimationFrame(loop);
+    }
+
+  </script>
+
+</body>
+
+</html>

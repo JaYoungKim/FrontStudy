@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="progress-wrap">
+        <div class="bar"></div>
+    </div>
+
+    <img src="./images/submarine.gif" class="submarine" alt="잠수함" />
+    <div class="inner-wrap">
+        <h2 class="title">The Deep Sea</h2>
+        <div class="text-wrap">
+            <p>대게</p>
+            <img src="./images/crab.png" alt="대게" />
+        </div>
+        <div class="text-wrap">
+            <p>오징어</p>
+            <img src="./images/cuttle.png" alt="오징어" />
+        </div>
+        <div class="text-wrap">
+            <p>방어</p>
+            <img src="./images/fish_01.png" alt="방어" />
+        </div>
+        <div class="text-wrap">
+            <p>미역</p>
+            <img src="./images/seaweed.png" alt="미역" />
+        </div>
+    </div>
+    <img src="./images/octo.png" class="octopus" alt="문어" />
+
+    <div class="depth-wrap">
+        <p><span class="meter">0</span> METERS DEEP</p>
+    </div>
+    </div>
+</body>
+
+<script>
+    const $progress = document.querySelector('.progress-wrap .bar');
+    const $meter = document.querySelector('.depth-wrap .meter');
+    const $submarine = document.querySelector('.submarine');
+    const $octopus = document.querySelector('.octopus');
+
+    let scrollNum = 0;
+    let documentHeight = 0;
+    let per = 0;
+
+    window.addEventListener('scroll', function () {
+        scrollNum = window.scrollY;
+        documentHeight = document.body.scrollHeight - window.innerHeight;
+
+        per = percent(scrollNum, documentHeight);
+
+        $progress.style.width = `${per}%`;
+        $meter.innerText = (scrollNum).toFixed(0);
+        
+        $submarine.style.transform = `translateX(${per}%)`;
+        $octopus.style.transform = `translateY(${per / -3}%)`;
+    });
+
+    const percent = (num, totalNum) => {
+        return ((num / totalNum) * 100).toFixed(0);
+    }
+</script>
+
+</html>
